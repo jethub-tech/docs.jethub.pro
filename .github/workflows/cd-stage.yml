@@ -1,59 +1,59 @@
-# name: cd-stage
+name: cd-stage
 
-# on:
-#   workflow_dispatch:
+on:
+  workflow_dispatch:
 #   push:
 #     branches:
 #       - 'dependabot/**'
 
-# env:
-#   PUBLISH_BRANCH: pycourse-page-stage
+env:
+  PUBLISH_BRANCH: web-page-stage
 
-# jobs:
+jobs:
 
-#   deploy:
-#     runs-on: ubuntu-latest
-#     timeout-minutes: 4
-#     permissions:
-#       contents: write
-#     environment:
-#       name: pycourse-page-stage
-#       url: https://pycourse-page-stage.netlify.app/
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    permissions:
+      contents: write
+    environment:
+      name: ${{ env.PUBLISH_BRANCH }}   # todo: создать
+    #   url: https://pycourse-page-stage.netlify.app/   # todo: обновить
 
-#     steps:
+    steps:
 
-#       - name: checkout code
-#         uses: actions/checkout@v4
+      - name: checkout code
+        uses: actions/checkout@v4
 
-#       - name: setup python
-#         uses: actions/setup-python@v4
-#         with:
-#           python-version: '3.10'
-#           cache: 'pip'
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-#       - name: caching
-#         uses: actions/cache@v3
-#         with:
-#           key: ${{ github.ref }}
-#           path: .cache
+      - name: caching
+        uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
 
-#       - name: install deps
-#         run: |
-#           python -m pip install --upgrade pip
-#           pip install -r requirements.txt
+      - name: install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-#       - name: image processing deps
-#         run: |
-#           sudo pip install pillow cairosvg
-#           sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
-#           sudo apt-get install pngquant
+      - name: image processing deps
+        run: |
+          sudo pip install pillow cairosvg
+          sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+          sudo apt-get install pngquant
 
-#       - name: deploy mkdocs
-#         run: mkdocs build -v
+      - name: deploy mkdocs
+        run: mkdocs build -v
 
-#       - name: update publish dir to build branch
-#         uses: peaceiris/actions-gh-pages@v3.9.3
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_branch: ${{ env.PUBLISH_BRANCH }}
-#           publish_dir: ./site
+      - name: update publish dir to build branch
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: ${{ env.PUBLISH_BRANCH }}
+          publish_dir: ./site
