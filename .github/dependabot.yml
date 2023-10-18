@@ -12,7 +12,7 @@ updates:
     labels:
       - "dependencies"
 
-  - package-ecosystem: "gh-actions"
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
