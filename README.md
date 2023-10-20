@@ -10,7 +10,7 @@
     pip install -r requirements.txt
     ```
 
-- запустить
+- для просмотра динамической книги выполнить
 
     ```bash
     mkdocs serve --dirtyreload
