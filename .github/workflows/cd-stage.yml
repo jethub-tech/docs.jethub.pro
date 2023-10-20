@@ -2,12 +2,12 @@ name: cd-stage
 
 on:
   workflow_dispatch:
-#   push:
-#     branches:
-#       - 'dependabot/**'
+  push:
+    branches:
+      - 'dependabot/**'
 
 env:
-  PUBLISH_BRANCH: web-page-stage
+  PUBLISH_BRANCH: site-stage
 
 jobs:
 
@@ -16,9 +16,9 @@ jobs:
     timeout-minutes: 4
     permissions:
       contents: write
-    environment:
-      name: ${{ env.PUBLISH_BRANCH }}   # todo: создать
-    #   url: https://pycourse-page-stage.netlify.app/   # todo: обновить
+    # environment:
+      # name: ${{ env.PUBLISH_BRANCH }}   # todo: создать окружение
+      #   url: https://site-stage.netlify.app/   # todo: создать и обновить сайт
 
     steps:
 
