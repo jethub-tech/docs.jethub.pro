@@ -16,9 +16,9 @@ jobs:
     timeout-minutes: 4
     permissions:
       contents: write
-    # environment:
-      # name: ${{ env.PUBLISH_BRANCH }}   # todo: создать окружение
-      #   url: https://site-stage.netlify.app/   # todo: создать и обновить сайт
+    environment:
+      name: ${{ env.PUBLISH_BRANCH }}
+      # url: https://site-stage.netlify.app/   # todo: создать и обновить сайт
 
     steps:
 
