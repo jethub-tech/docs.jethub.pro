@@ -17,7 +17,7 @@ jobs:
     permissions:
       contents: write
     environment:
-      name: ${{ env.PUBLISH_BRANCH }}
+      name: site-stage
       # url: https://site-stage.netlify.app/   # todo: создать и обновить сайт
 
     steps:
