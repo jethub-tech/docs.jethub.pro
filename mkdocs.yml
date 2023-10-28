@@ -123,5 +123,20 @@ nav:
     - index.md
   - Python:
     - python/index.md
-    - Ошибки:
-      - python/errors/error_test.md
+    - Общие ошибки:
+      # - python/common_errors/error_test.md
+      - Класс ВЫЗОВ ФУНКЦИИ:
+          - Инъекции:
+            - python/common_errors/calls/injections/JP1217C shell инъекция. Subprocess с параметром shell True.md
+            - python/common_errors/calls/injections/JP1219C shell инъекция. Subprocess без параметра shell True.md
+            - python/common_errors/calls/injections/JP1221C shell инъекция. Расширенный список Subprocess.md
+            - python/common_errors/calls/injections/JP1223C shell инъекция через прямой вызов системной оболочки.md
+      - Класс ОПРЕДЕЛЕНИЕ ФУНКЦИИ:
+            - python/common_errors/def/JP1019F определение функции с устаревшими TLS_SSL параметрами по умолчанию.md
+      - Класс ИМПОРТ ЗАВИСИМОСТИ:
+          - python/common_errors/import/error_test.md
+    - Специальные:
+      # - python/special/error_test.md
+      - Класс Blacklist Call:
+          - python/special/error_test.md
+
