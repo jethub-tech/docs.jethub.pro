@@ -123,7 +123,7 @@ nav:
     - index.md
   - Python:
     - python/index.md
-    - Общие ошибки:
+    - Общие:
       # - python/common_errors/error_test.md
       - Класс ВЫЗОВ ФУНКЦИИ:
           - Инъекции:
@@ -131,12 +131,18 @@ nav:
             - python/common_errors/calls/injections/JP1219C shell инъекция. Subprocess без параметра shell True.md
             - python/common_errors/calls/injections/JP1221C shell инъекция. Расширенный список Subprocess.md
             - python/common_errors/calls/injections/JP1223C shell инъекция через прямой вызов системной оболочки.md
+          - python/common_errors/calls/JP0217C исполнение кода с помощью exec.md
+          - python/common_errors/calls/JP0225С использование фиксированных строк для 'секретов' при вызове функций.md
       - Класс ОПРЕДЕЛЕНИЕ ФУНКЦИИ:
             - python/common_errors/def/JP1019F определение функции с устаревшими TLS_SSL параметрами по умолчанию.md
+            - python/common_errors/def/JP0227F использование фиксированных строк для 'секретов' при опредлении функций.md
       - Класс ИМПОРТ ЗАВИСИМОСТИ:
-          - python/common_errors/import/error_test.md
+          - python/common_errors/import/placeholder.md
+      - Класс ПОИСК СТРОК:
+          - python/common_errors/string/JP0221S привязка к адресу 'все интерфейсы'.md
+          - python/common_errors/string/JP0223F использование фиксированных строк для переменных 'секретов'.md
+          - python/common_errors/string/JP0229S небезопасное использование временных tmp файлов или директорий.md
     - Специальные:
-      # - python/special/error_test.md
       - Класс Blacklist Call:
-          - python/special/error_test.md
+          - python/special/JP0615B вызов модулей Pickle.md
 
