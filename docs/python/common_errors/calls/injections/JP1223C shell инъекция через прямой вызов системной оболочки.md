@@ -7,28 +7,13 @@
 
 
 ---
-Проверяемые методы:
-<!---
-NOTE!! CHECK execute with timeout
--->
-
-- os.system
-- os.popen
-- os.popen2
-- os.popen3
-- os.popen4
-- popen2.popen2
-- popen2.popen3
-- popen2.popen4
-- popen2.Popen3
-- popen2.Popen4
-- commands.getoutput
-- commands.getstatusoutput
----
+Пример небезопасного использования:
+'''
+from subprocess import Popen
+Popen('bin/gcc --version', shell=False)
+'''
 
 * __Особенности:__ ...
-<!---
-NOTE!! CHANGE TO HIGH
--->
+
 * __Степень критичности:__ НИЗКАЯ
-* __Достоверность определения:__ СРЕДНЯЯ
+* __Достоверность определения:__ ВЫСОКАЯ

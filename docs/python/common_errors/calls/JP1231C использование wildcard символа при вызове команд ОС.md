@@ -11,10 +11,23 @@ ___
 
 ---
 Проверяются следующие команды:
-* 'chown'
-* 'chmod'
-* 'tar'
-* 'rsync'
+- 'chown'
+- 'chmod'
+- 'tar'
+- 'rsync'
+
+Список вызовов:
+- subprocess.Popen
+- subprocess.call
+- os.system
+- os.popen
+- popen2.Popen3
+- popen2.Popen4
+- commands.getoutput
+- commands.getstatusoutput
+- os.execl
+- os.execle
+
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/78.html>
