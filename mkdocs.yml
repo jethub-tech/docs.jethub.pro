@@ -127,21 +127,48 @@ nav:
       # - python/common_errors/error_test.md
       - Класс ВЫЗОВ ФУНКЦИИ:
           - Инъекции:
+            - python/common_errors/calls/injections/JP1215C shell инъекция. Небезопасное использование paramiko.md
             - python/common_errors/calls/injections/JP1217C shell инъекция. Subprocess с параметром shell True.md
             - python/common_errors/calls/injections/JP1219C shell инъекция. Subprocess без параметра shell True.md
             - python/common_errors/calls/injections/JP1221C shell инъекция. Расширенный список Subprocess.md
             - python/common_errors/calls/injections/JP1223C shell инъекция через прямой вызов системной оболочки.md
+            - python/common_errors/calls/injections/JP1225C shell инъекция. Subprocess без параметра shell True.md
+            - python/common_errors/calls/injections/JP1227C shell инъекция. Запуск процесса с указанием относительного пути.md
+            - python/common_errors/calls/injections/JP1233C shell инъекция через вызов Django extra.md
+            - python/common_errors/calls/injections/JP1235C shell инъекция через вызов Django RawSQL.md
+          - Библиотеки:
+              - python/common_errors/calls/libs/JP0239C использование requests без таймаута.md
+              - python/common_errors/calls/libs/JP0415C использование Flask в режиме debug.md
+              - python/common_errors/calls/libs/JP0417C вызов tarfile без проверки содержимого.md
+              - python/common_errors/calls/libs/JP1025C использование yaml load.md
+              - python/common_errors/calls/libs/JP1029C использование устаревшей версии библиотеки SNMP.md
+              - python/common_errors/calls/libs/JP1031C использование библиотеки SNMP со слабым шифрованием.md
+              - python/common_errors/calls/libs/JP1237C небезопасное использование logging с конфигурацией через listen.md
+              - python/common_errors/calls/libs/JP1415C использование jinja2 с параметром autoescape False.md
+              - python/common_errors/calls/libs/JP1417C использование mako без самостоятельной проверки ввода.md
+              - python/common_errors/calls/libs/JP1419C вызов Django mark_safe.md
+          - Протоколы SSL-TLS-SSH:
+            - python/common_errors/calls/ssl_tls_ssh/JP1015C использование requests без проверки SSL сертификатов.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1017C вызов функции с устаревшими TLS_SSL параметрами.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1021C вызов функции SSL без указания TLS_SSL параметра.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1027C использование библиотеки paramiko для SSH-соединений без проверки ключа.md
           - python/common_errors/calls/JP0217C исполнение кода с помощью exec.md
+          - python/common_errors/calls/JP0219C изменение параметров доступа к файлам через os_chmod.md
           - python/common_errors/calls/JP0225С использование фиксированных строк для 'секретов' при вызове функций.md
+          - python/common_errors/calls/JP0661C Использование небезопасных хэш-функций.md
+          - python/common_errors/calls/JP1023C использование слабых криптографических ключей.md
+          - python/common_errors/calls/JP1231C использование wildcard символа при вызове команд ОС.md
       - Класс ОПРЕДЕЛЕНИЕ ФУНКЦИИ:
-            - python/common_errors/def/JP1019F определение функции с устаревшими TLS_SSL параметрами по умолчанию.md
-            - python/common_errors/def/JP0227F использование фиксированных строк для 'секретов' при опредлении функций.md
-      - Класс ИМПОРТ ЗАВИСИМОСТИ:
-          - python/common_errors/import/placeholder.md
+          - python/common_errors/def/JP1019F определение функции с устаревшими TLS_SSL параметрами по умолчанию.md
+          - python/common_errors/def/JP0227F использование фиксированных строк для 'секретов' при опредлении функций.md
+      - Класс ИСКЛЮЧЕНИЕ:
+          - python/common_errors/exception/JP0233E блок try except с использованием pass.md
+          - python/common_errors/exception/JP0237E блок try except с использованием continue.md
       - Класс ПОИСК СТРОК:
           - python/common_errors/string/JP0221S привязка к адресу 'все интерфейсы'.md
           - python/common_errors/string/JP0223F использование фиксированных строк для переменных 'секретов'.md
           - python/common_errors/string/JP0229S небезопасное использование временных tmp файлов или директорий.md
+          - python/common_errors/string/JP1229S SQL инъекция.md
     - Специальные:
       - Класс Blacklist Call:
           - python/special/JP0615B вызов модулей Pickle.md
