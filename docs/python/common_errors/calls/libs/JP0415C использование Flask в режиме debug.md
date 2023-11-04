@@ -6,16 +6,15 @@
 
 ---
 Пример небезопасного использования:
-'''
+```
 app.run(debug=True)
 python -m flask run --host=0.0.0.0
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/80.html>
 > <https://flask.palletsprojects.com/en/1.1.x/quickstart/#debug-mode>
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ СРЕДНЯЯ
 * __Достоверность определения:__ ВЫСОКАЯ

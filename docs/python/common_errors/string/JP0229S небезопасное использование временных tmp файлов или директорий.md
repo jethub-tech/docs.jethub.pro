@@ -38,6 +38,7 @@ with tempfile.TemporaryFile() as tmp:
 > <https://cwe.mitre.org/data/definitions/377.html>
 > <https://cwe.mitre.org/data/definitions/379.html>
 > <https://cwe.mitre.org/data/definitions/459.html>
-
+---
+* __Особенности:__ ...
 * __Степень критичности:__ СРЕДНЯЯ
 * __Достоверность определения:__ СРЕДНЯЯ

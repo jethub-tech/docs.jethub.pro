@@ -3,18 +3,19 @@
 Как правило, ошибка не представляет собой уязвимость при условии, что на входе вызовов
 методов из группы subprocess представлена достоверная пользовательская команда.  
 
-> Дополнительная информация:
-> <https://docs.python.org/2/library/subprocess.html#frequently-used-arguments>
 ---
 Проверяемые методы:
 
 * subprocess.Popen
 * subprocess.call
 ---
-
+> Дополнительная информация:
+> <https://docs.python.org/2/library/subprocess.html#frequently-used-arguments>
+---
 * __Особенности:__ Shell=False
 <!---
 NOTE!! CHANGE TO HIGH
 -->
+---
 * __Степень критичности:__ НИЗКАЯ
 * __Достоверность определения:__ ВЫСОКАЯ

@@ -6,32 +6,19 @@
 В случае умышленной подмены переменных окружения в файле PATH, 
 может быть потенциально запущена небезопасная программа.
 
+---
+Пример небезопасного использования:
+```
+from subprocess import Popen
+Popen('bin/gcc --version', shell=False)
+```
+
+---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/78.html>
-> <https://docs.python.org/3/library/os.html#os.system>
+> <https://docs.python.org/3/library/os.html#process-management>
 ---
-Проверяемые методы:
-
-* os.execl
-* os.execle
-* os.execlp
-* os.execlpe
-* os.execv
-* os.execve
-* os.execvp
-* os.execvpe
-* os.spawnl
-* os.spawnle
-* os.spawnlp
-* os.spawnlpe
-* os.spawnv
-* os.spawnve
-* os.spawnvp
-* os.spawnvpe
-* os.startfile
----
-
 * __Особенности:__
-
+---
 * __Степень критичности:__ НИЗКАЯ
-* __Достоверность определения:__ СРЕДНЯЯ
+* __Достоверность определения:__ ВЫСОКАЯ

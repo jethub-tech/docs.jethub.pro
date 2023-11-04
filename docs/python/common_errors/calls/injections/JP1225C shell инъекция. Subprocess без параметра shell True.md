@@ -6,9 +6,12 @@
 для индикации потенциально уязвимых мест программы в 
 рамках тестирования (на проникновение).
 
-> Дополнительная информация:
-> <https://cwe.mitre.org/data/definitions/78.html>
-> <https://docs.python.org/3/library/os.html#os.system>
+---
+Пример небезопасного использования:
+```
+import os
+os.spawnv(mode, path, args)
+```
 ---
 Проверяемые методы:
 
@@ -30,8 +33,11 @@
 * os.spawnvpe
 * os.startfile
 ---
-
+> Дополнительная информация:
+> <https://cwe.mitre.org/data/definitions/78.html>
+> <https://docs.python.org/3/library/os.html#os.system>
+---
 * __Особенности:__
-
+---
 * __Степень критичности:__ НИЗКАЯ
 * __Достоверность определения:__ СРЕДНЯЯ

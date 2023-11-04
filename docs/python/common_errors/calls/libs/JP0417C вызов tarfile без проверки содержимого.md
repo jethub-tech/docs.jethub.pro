@@ -6,19 +6,16 @@
 
 ---
 Пример небезопасного использования:
-'''
+```
 tarfile.extractall()
 tarfile.extractalll(members=function(tarfile))
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/22.html>
 > <https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extractall>
-
+---
 * __Особенности:__ в новых версиях библиотеки tarfile начиная с 3.12 длбавлено
-* использование стандартных фильтров через параметр filter.
-
-
-
+использование стандартных фильтров через параметр filter.
 * __Степень критичности:__ НИЗКАЯ-ВЫСОКАЯ
 * __Достоверность определения:__ ВЫСОКАЯ

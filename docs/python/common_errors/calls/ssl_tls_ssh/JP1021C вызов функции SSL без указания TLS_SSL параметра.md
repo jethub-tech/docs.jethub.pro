@@ -4,17 +4,15 @@
 Проверка вызова функции ssl.wrap_socket() без параметра, указывающего на требуемый 
 протокол SSL/TLS.
 
-> Дополнительная информация:
-> <https://docs.python.org/3/library/ssl.html>
-> <https://cwe.mitre.org/data/definitions/327.html>
----
-
 <!---
 NOTE!! НУЖНО ПРОВЕРИТЬ РАБОТУ ТАК КАК ИСПОЛЬЗУЕТСЯ КОНФИГ из ssl_with_bad_version 
 -->
 
-
+---
+> Дополнительная информация:
+> <https://docs.python.org/3/library/ssl.html>
+> <https://cwe.mitre.org/data/definitions/327.html>
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ НИЗКАЯ
 * __Достоверность определения:__ СРЕДНЯЯ

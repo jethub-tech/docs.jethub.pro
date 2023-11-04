@@ -6,15 +6,15 @@
 
 ---
 Пример небезопасного использования:
-'''
+```
 paramiko.exec_command('command to be sanitized by developer')
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/78.html>
 > <https://github.com/paramiko/paramiko>
-
+---
 * __Особенности:__ ...
-
+---
 * __Степень критичности:__ СРЕДНЯЯ
 * __Достоверность определения:__ СРЕДНЯЯ

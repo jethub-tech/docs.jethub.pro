@@ -4,7 +4,7 @@
 
 ---
 Пример небезопасного использования:
-'''
+```
 from pysnmp.hlapi import *
 
 iterator = getCmd(
@@ -14,12 +14,11 @@ iterator = getCmd(
     ContextData(),
     ObjectType(ObjectIdentity('IF-MIB', 'ifInOctets', 1))
 )
-'''
+```
 ---
 > Дополнительная информация:
 > <https://pysnmp.readthedocs.io/en/latest/examples/hlapi/v3arch/asyncore/sync/manager/cmdgen/snmp-versions.html>
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ СРЕДНЯЯ
 * __Достоверность определения:__ ВЫСОКАЯ

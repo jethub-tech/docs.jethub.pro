@@ -7,18 +7,17 @@ autoescape=True в явном виде.
 
 ---
 Пример небезопасного использования:
-'''
+```
 import jinja2
 environment = jinja2.Environment(autoescape=False)
 template = environment.from_string("Hello, {{ name }}!")
 template.render(name="World")
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/94.html>
 > <https://jinja.palletsprojects.com/en/2.11.x/api/#autoescaping>
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ ВЫСОКАЯ
 * __Достоверность определения:__ ВЫСОКАЯ

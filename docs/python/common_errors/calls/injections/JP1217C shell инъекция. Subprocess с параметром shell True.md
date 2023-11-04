@@ -7,18 +7,19 @@
 Для вызова команд с параметром shell=False отключено большинство стандратных функий оболочки shell, что снижает
 вероятность уязвистмоти с внедрением сторонних команд.
 
-> Дополнительная информация:
-> <https://docs.python.org/2/library/subprocess.html#frequently-used-arguments>
 ---
 Проверяемые методы:
 
 * subprocess.Popen 
 * subprocess.call
 ---
-
+> Дополнительная информация:
+> <https://docs.python.org/2/library/subprocess.html#frequently-used-arguments>
+---
 * __Особенности:__ Shell=True
 <!---
 NOTE!! CHANGE TO HIGH-LOW
 -->
+---
 * __Степень критичности:__ НИЗКАЯ
 * __Достоверность определения:__ ВЫСОКАЯ

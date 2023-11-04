@@ -4,18 +4,16 @@
 
 ---
 Пример небезопасного использования:
-'''
+```
 os.chmod('/etc/passwd', stat.S_IRWXU)
 os.chmod('/etc/passwd', 511)
 os.chmod('/etc/passwd', 0x1ff)
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/732.html>
 > <https://docs.python.org/3/library/stat.html>
-> 
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ СРЕДНЯЯ-ВЫСОКАЯ
 * __Достоверность определения:__ СРЕДНЯЯ

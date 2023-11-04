@@ -7,8 +7,13 @@
 Для вызова команд с параметром shell=False отключено большинство стандратных функий оболочки shell, что снижает
 вероятность уязвистмоти с внедрением сторонних команд.
 
-> Дополнительная информация:
-> <https://docs.python.org/2/library/subprocess.html#frequently-used-arguments>
+---
+Пример небезопасного использования:
+```
+from subprocess import Popen
+def call_gcc(param: str):
+    Popen(f'bin/gcc {param}', shell=True)
+```
 ---
 Проверяемые методы:
 <!---
@@ -21,10 +26,14 @@ NOTE!! CHECK execute with timeout
 * subprocess.check_output
 * execute_with_timeout
 ---
-
+> Дополнительная информация:
+> <https://cwe.mitre.org/data/definitions/78.html>
+> <https://docs.python.org/2/library/subprocess.html#frequently-used-arguments>
+---
 * __Особенности:__ Shell=True
 <!---
 NOTE!! CHANGE TO HIGH-LOW
 -->
-* __Степень критичности:__ НИЗКАЯ
+---
+* __Степень критичности:__ СРЕДНЯЯ
 * __Достоверность определения:__ ВЫСОКАЯ

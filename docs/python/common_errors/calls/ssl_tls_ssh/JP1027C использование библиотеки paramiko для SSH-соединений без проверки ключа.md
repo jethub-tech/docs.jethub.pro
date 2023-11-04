@@ -6,7 +6,7 @@ AutoAddPolicy или WarningPolicy позволяет добавлять клю�
 
 ---
 Пример небезопасного использования:
-'''
+```
 import paramiko
 
 client = paramiko.SSHClient()
@@ -14,13 +14,12 @@ client.load_system_host_keys()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 client.set_missing_host_key_policy(paramiko.WarningPolicy)
 )
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/322.html>
 > <https://docs.paramiko.org/en/3.3/api/client.html>
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ ВЫСОКАЯ
 * __Достоверность определения:__ СРЕДНЯЯ

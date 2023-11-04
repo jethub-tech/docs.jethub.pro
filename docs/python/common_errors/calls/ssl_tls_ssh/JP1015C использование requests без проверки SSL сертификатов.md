@@ -6,16 +6,15 @@ SSL сертификатов протокола HTTPS при работе вне
 
 ---
 Пример небезопасного использования:
-'''
+```
 import requests
 requests.get('https://example.com', verify=False)
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/295.html>
 > <https://requests.readthedocs.io/en/latest/user/advanced/>
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ ВЫСОКАЯ
 * __Достоверность определения:__ ВЫСОКАЯ

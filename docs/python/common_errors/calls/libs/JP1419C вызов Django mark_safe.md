@@ -7,17 +7,16 @@
 
 ---
 Пример небезопасного использования:
-'''
+```
 def function(url):
     html = f'<a href="{url}">{url}</a>'
     return mark_safe(html)
-'''
+```
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/80.html>
 > <https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.safestring>
-
+---
 * __Особенности:__ ...
-
 * __Степень критичности:__ СРЕДНЯЯ
 * __Достоверность определения:__ ВЫСОКАЯ

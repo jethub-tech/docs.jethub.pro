@@ -4,9 +4,7 @@
 Проверка вызова функции с параметром, указывающим на использование устарвших заголовков
 для протоколов SSL/TLS. Использует набор заголовков из стандартного пакета Python.
 
-> Дополнительная информация:
-> <https://docs.python.org/3/library/ssl.html>
-> <https://cwe.mitre.org/data/definitions/327.html>
+
 ---
 Список токенов:
 <!---
@@ -23,7 +21,10 @@ NOTE!! НУЖНО РАСШИРИТЬ СПИСОК. Дополнить прове
 - PROTOCOL_TLSv1_1
 - TLSv1_1_METHOD
 ---
-
+> Дополнительная информация:
+> <https://docs.python.org/3/library/ssl.html>
+> <https://cwe.mitre.org/data/definitions/327.html>
+---
 * __Особенности:__ ...
 <!---
 NOTE!! CHANGE TO HIGH
