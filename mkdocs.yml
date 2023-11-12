@@ -166,7 +166,7 @@ nav:
           - python/common_errors/exception/JP0237E блок try except с использованием continue.md
       - Класс ПОИСК СТРОК:
           - python/common_errors/string/JP0221S привязка к адресу 'все интерфейсы'.md
-          - python/common_errors/string/JP0223F использование фиксированных строк для переменных 'секретов'.md
+          - python/common_errors/string/JP0223S использование фиксированных строк для переменных 'секретов'.md
           - python/common_errors/string/JP0229S небезопасное использование временных tmp файлов или директорий.md
           - python/common_errors/string/JP1229S SQL инъекция.md
     - Специальные:
