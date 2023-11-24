@@ -171,39 +171,39 @@ nav:
           - python/common_errors/string/JP1229S SQL инъекция.md
     - Специальные:
       - Класс Blacklist Call:
-          - python/special/Call/JP0615B вызов модулей pickle.md
-          - python/special/Call/JP0617B вызов модулей marshal.md
-          - python/special/Call/JP0619B использование небезопасных хэш функий MD2, MD4, MD5, or SHA1.md
-          - python/special/Call/JP0621B использование небезопасных шифров.md
-          - python/special/Call/JP0623B использование небезопасных шифров (режими функций).md
-          - python/special/Call/JP0625B использование небезопасной функции mktemp.md
-          - python/special/Call/JP0627B использование небезопасной функции eval.md
-          - python/special/Call/JP0629B использование небезопасной функции mark_safe из пакета Django.md
-          - python/special/Call/JP0633B использование небезопасных схем urllib urlopen.md
-          - python/special/Call/JP0635B использование random для криптографических операций.md
-          - python/special/Call/JP0637B использование telnet.md
-          - python/special/Call/JP0639B использование xml парсеров cElementTree.md
-          - python/special/Call/JP0641B использование xml парсеров ElementTree.md
-          - python/special/Call/JP0643B использование xml парсеров expatreader.md
-          - python/special/Call/JP0645B использование xml парсеров expatbuilder.md
-          - python/special/Call/JP0647B использование xml парсеров sax.md
-          - python/special/Call/JP0649B использование xml парсеров minidom.md
-          - python/special/Call/JP0651B использование xml парсеров pulldom.md
-          - python/special/Call/JP0653B использование xml парсеров etree.md
-          - python/special/Call/JP0655B использование протокола FTP.md
-          - python/special/Call/JP0657B использование протокола input python2.md
-          - python/special/Call/JP0659B использование ssl c unverified_context.md
+          - python/special/call/JP0615B вызов модулей pickle.md
+          - python/special/call/JP0617B вызов модулей marshal.md
+          - python/special/call/JP0619B использование небезопасных хэш функий MD2, MD4, MD5, or SHA1.md
+          - python/special/call/JP0621B использование небезопасных шифров.md
+          - python/special/call/JP0623B использование небезопасных шифров (режими функций).md
+          - python/special/call/JP0625B использование небезопасной функции mktemp.md
+          - python/special/call/JP0627B использование небезопасной функции eval.md
+          - python/special/call/JP0629B использование небезопасной функции mark_safe из пакета Django.md
+          - python/special/call/JP0633B использование небезопасных схем urllib urlopen.md
+          - python/special/call/JP0635B использование random для криптографических операций.md
+          - python/special/call/JP0637B использование telnet.md
+          - python/special/call/JP0639B использование xml парсеров cElementTree.md
+          - python/special/call/JP0641B использование xml парсеров ElementTree.md
+          - python/special/call/JP0643B использование xml парсеров expatreader.md
+          - python/special/call/JP0645B использование xml парсеров expatbuilder.md
+          - python/special/call/JP0647B использование xml парсеров sax.md
+          - python/special/call/JP0649B использование xml парсеров minidom.md
+          - python/special/call/JP0651B использование xml парсеров pulldom.md
+          - python/special/call/JP0653B использование xml парсеров etree.md
+          - python/special/call/JP0655B использование протокола FTP.md
+          - python/special/call/JP0657B использование протокола input python2.md
+          - python/special/call/JP0659B использование ssl c unverified_context.md
       - Класс Blacklist Import:
-          - python/special/Import/JP0815B импорт telnetlib.md
-          - python/special/Import/JP0817B импорт бибилиотек FTP.md
-          - python/special/Import/JP0819B импорт модулей pickle.md
-          - python/special/Import/JP0823B импорт xml парсеров xml.etree.md
-          - python/special/Import/JP0825B импорт xml парсеров sax.md
-          - python/special/Import/JP0827B использование xml парсеров expatbuilder.md
-          - python/special/Import/JP0829B импорт xml парсеров minidom.md
-          - python/special/Import/JP0831B импорт xml парсеров pulldom.md
-          - python/special/Import/JP0833B импорт xml парсеров lxml.md
-          - python/special/Import/JP0835B импорт xmlrpc библиотек.md
-          - python/special/Import/JP0837B импорт httpoxy библиотек.md
-          - python/special/Import/JP0839B импорт библиотек crypto.md
-          - python/special/Import/JP0843B импорт библиотек pyghmi.md
+          - python/special/import/JP0815B импорт telnetlib.md
+          - python/special/import/JP0817B импорт бибилиотек FTP.md
+          - python/special/import/JP0819B импорт модулей pickle.md
+          - python/special/import/JP0823B импорт xml парсеров xml.etree.md
+          - python/special/import/JP0825B импорт xml парсеров sax.md
+          - python/special/import/JP0827B использование xml парсеров expatbuilder.md
+          - python/special/import/JP0829B импорт xml парсеров minidom.md
+          - python/special/import/JP0831B импорт xml парсеров pulldom.md
+          - python/special/import/JP0833B импорт xml парсеров lxml.md
+          - python/special/import/JP0835B импорт xmlrpc библиотек.md
+          - python/special/import/JP0837B импорт httpoxy библиотек.md
+          - python/special/import/JP0839B импорт библиотек crypto.md
+          - python/special/import/JP0843B импорт библиотек pyghmi.md
