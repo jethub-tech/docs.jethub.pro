@@ -138,7 +138,7 @@ nav:
             - python/common_errors/calls/injections/JP1235C shell инъекция через вызов Django RawSQL.md
           - Библиотеки:
               - python/common_errors/calls/libs/JP0239C использование requests без таймаута.md
-              - python/common_errors/calls/libs/JP0415C использование Flask в режиме debug.md
+              - python/common_errors/calls/libs/JP0415C использование flask в режиме debug.md
               - python/common_errors/calls/libs/JP0417C вызов tarfile без проверки содержимого.md
               - python/common_errors/calls/libs/JP1025C использование yaml load.md
               - python/common_errors/calls/libs/JP1029C использование устаревшей версии библиотеки SNMP.md
@@ -154,24 +154,24 @@ nav:
             - python/common_errors/calls/ssl_tls_ssh/JP1027C использование библиотеки paramiko для SSH-соединений без проверки ключа.md
           - python/common_errors/calls/JP0217C исполнение кода с помощью exec.md
           - python/common_errors/calls/JP0219C изменение параметров доступа к файлам через os_chmod.md
-          - python/common_errors/calls/JP0225С использование фиксированных строк для 'секретов' при вызове функций.md
+          - python/common_errors/calls/JP0225С использование фиксированных строк для «секретов» при вызове функций.md
           - python/common_errors/calls/JP0661C Использование небезопасных хэш-функций.md
           - python/common_errors/calls/JP1023C использование слабых криптографических ключей.md
           - python/common_errors/calls/JP1231C использование wildcard символа при вызове команд ОС.md
       - Класс ОПРЕДЕЛЕНИЕ ФУНКЦИИ:
           - python/common_errors/def/JP1019F определение функции с устаревшими TLS_SSL параметрами по умолчанию.md
-          - python/common_errors/def/JP0227F использование фиксированных строк для 'секретов' при опредлении функций.md
+          - python/common_errors/def/JP0227F использование фиксированных строк для «секретов» при опредлении функций.md
       - Класс ИСКЛЮЧЕНИЕ:
-          - python/common_errors/exception/JP0233E блок try except с использованием pass.md
-          - python/common_errors/exception/JP0237E блок try except с использованием continue.md
+          - python/common_errors/exception/JP0233E блок try-except с использованием pass.md
+          - python/common_errors/exception/JP0237E блок try-except с использованием continue.md
       - Класс ПОИСК СТРОК:
-          - python/common_errors/string/JP0221S привязка к адресу 'все интерфейсы'.md
-          - python/common_errors/string/JP0223S использование фиксированных строк для переменных 'секретов'.md
+          - python/common_errors/string/JP0221S привязка к адресу «все интерфейсы».md
+          - python/common_errors/string/JP0223S использование фиксированных строк для переменных «секретов».md
           - python/common_errors/string/JP0229S небезопасное использование временных tmp файлов или директорий.md
           - python/common_errors/string/JP1229S SQL инъекция.md
     - Специальные:
       - Класс Blacklist Call:
-          - python/special/Call/JP0615B вызов модулей Pickle.md
+          - python/special/Call/JP0615B вызов модулей pickle.md
           - python/special/Call/JP0617B вызов модулей marshal.md
           - python/special/Call/JP0619B использование небезопасных хэш функий MD2, MD4, MD5, or SHA1.md
           - python/special/Call/JP0621B использование небезопасных шифров.md
@@ -196,7 +196,7 @@ nav:
       - Класс Blacklist Import:
           - python/special/Import/JP0815B импорт telnetlib.md
           - python/special/Import/JP0817B импорт бибилиотек FTP.md
-          - python/special/Import/JP0819B импорт модулей Pickle.md
+          - python/special/Import/JP0819B импорт модулей pickle.md
           - python/special/Import/JP0823B импорт xml парсеров xml.etree.md
           - python/special/Import/JP0825B импорт xml парсеров sax.md
           - python/special/Import/JP0827B использование xml парсеров expatbuilder.md
@@ -205,5 +205,5 @@ nav:
           - python/special/Import/JP0833B импорт xml парсеров lxml.md
           - python/special/Import/JP0835B импорт xmlrpc библиотек.md
           - python/special/Import/JP0837B импорт httpoxy библиотек.md
-          - python/special/Import/JP0839B импорт библиотек Crypto.md
+          - python/special/Import/JP0839B импорт библиотек crypto.md
           - python/special/Import/JP0843B импорт библиотек pyghmi.md
