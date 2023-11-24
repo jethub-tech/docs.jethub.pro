@@ -10,7 +10,7 @@ theme:
 
   font:
     text: Golos Text
-    code: JetBrains Mono
+    code: PT Mono
 
   favicon: assets/logo-jh-invert.png
   logo: assets/logo-jh-invert.png
