@@ -10,9 +10,8 @@
 * xml.etree.ElementTree
 * xml.etree.cElementTree
 
-
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/xml.etree.elementtree.html>
 ---
 * __Степень критичности:__ НИЗКАЯ

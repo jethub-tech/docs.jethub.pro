@@ -20,4 +20,3 @@ except Exception:
 ## Дополнительная информация
 
 * <https://cwe.mitre.org/data/definitions/703.html>
-
