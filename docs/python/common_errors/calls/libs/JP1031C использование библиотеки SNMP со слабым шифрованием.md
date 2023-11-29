@@ -3,7 +3,7 @@
 Проверка использования слабого шифрования в версиях SNMP v3 или выше.
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 from pysnmp.hlapi import *
 
@@ -16,7 +16,7 @@ iterator = getCmd(
 )
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://pysnmp.readthedocs.io/en/latest/examples/hlapi/v3arch/asyncore/sync/manager/cmdgen/snmp-versions.html>
 ---
 * __Особенности:__ ...

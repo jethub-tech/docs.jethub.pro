@@ -9,7 +9,7 @@
 * xml.dom.pulldom
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/xml.dom.pulldom.html>
 ---
 * __Степень критичности:__ НИЗКАЯ

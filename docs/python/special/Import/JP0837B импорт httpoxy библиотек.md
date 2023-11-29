@@ -12,7 +12,7 @@
 * twisted.web.twcgi.CGIDirectory
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/wsgiref.html>
 > <https://docs.twistedmatrix.com/en/stable/api/twisted.web.twcgi.CGIScript.html>
 ---

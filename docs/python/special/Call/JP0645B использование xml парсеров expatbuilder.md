@@ -10,7 +10,7 @@
 * xml.dom.expatbuilder.parseString
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://epydoc.sourceforge.net/stdlib/xml.dom.expatbuilder-module.html>
 ---
 * __Степень критичности:__ СРЕДНЯЯ

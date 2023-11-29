@@ -16,7 +16,7 @@
 * six.moves.urllib.request.FancyURLopener
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.safestring>
 ---
 * __Степень критичности:__ СРЕДНЯЯ

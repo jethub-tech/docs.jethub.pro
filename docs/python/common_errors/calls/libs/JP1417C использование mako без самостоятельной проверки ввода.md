@@ -7,14 +7,14 @@ HTML шаблонов и открывает уязвимость к XSS атак
 с использованием флагов 'n', 'h' или 'x' (например, для переменной temp: ${ temp |h }).
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 import mako
 
 mako.template.Template("my_template")
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/80.html>
 > <https://www.makotemplates.org/>
 ---

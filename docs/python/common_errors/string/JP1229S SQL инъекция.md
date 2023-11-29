@@ -7,7 +7,7 @@
 такими функциями см. JP1233C, JP1235C).
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 sql = 'UPDATE dbtable SET {values} WHERE {in_clause}'.format(
     values=values,
@@ -17,7 +17,7 @@ sql = 'UPDATE dbtable SET {values} WHERE {in_clause}'.format(
 cursor.execute("SELECT * FROM TEST WHERE ID = '%s'" % (id_1_param,))
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/89.html>
 > <https://www.owasp.org/index.php/SQL_Injection>
 ---

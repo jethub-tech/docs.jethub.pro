@@ -3,14 +3,14 @@
 Проверка использования os.chmod для установки высоких прав доступа к файлам и директориям.
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 os.chmod('/etc/passwd', stat.S_IRWXU)
 os.chmod('/etc/passwd', 511)
 os.chmod('/etc/passwd', 0x1ff)
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/732.html>
 > <https://docs.python.org/3/library/stat.html>
 ---

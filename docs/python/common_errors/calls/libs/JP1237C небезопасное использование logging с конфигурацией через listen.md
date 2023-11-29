@@ -7,12 +7,12 @@
 
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 t = logging.config.listen(port=1234)  # verify=None
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/logging.config.html#logging.config.listen>
 ---
 * __Особенности:__ ...

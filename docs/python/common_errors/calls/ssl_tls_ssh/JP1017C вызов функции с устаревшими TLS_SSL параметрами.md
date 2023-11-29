@@ -21,7 +21,7 @@ NOTE!! НУЖНО РАСШИРИТЬ СПИСОК. Дополнить прове
 - PROTOCOL_TLSv1_1
 - TLSv1_1_METHOD
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/ssl.html>
 > <https://cwe.mitre.org/data/definitions/327.html>
 ---

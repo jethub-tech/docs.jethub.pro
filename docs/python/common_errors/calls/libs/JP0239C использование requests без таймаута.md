@@ -3,14 +3,14 @@
 Использование библиотеки requests требует установки таймаута соединений при работе вне тестовой среды.
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 import requests
 
 requests.get("https://example.com")  # timeout=None
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://requests.readthedocs.io/en/latest/user/advanced/#timeouts>
 ---
 * __Особенности:__ ...

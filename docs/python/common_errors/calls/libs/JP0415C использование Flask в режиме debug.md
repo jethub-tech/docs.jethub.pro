@@ -5,7 +5,7 @@ Flask в режиме отладки использует дебаггер Werkz
 
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 app.run(debug=True)
 ```
@@ -15,7 +15,7 @@ python -m flask run --host=0.0.0.0
 ```
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/80.html>
 > <https://flask.palletsprojects.com/en/1.1.x/quickstart/#debug-mode>
 ---

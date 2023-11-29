@@ -14,7 +14,7 @@
 * lxml.etree.check_docinfo
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://lxml.de/api/lxml.etree-module.html>
 ---
 * __Степень критичности:__ СРЕДНЯЯ

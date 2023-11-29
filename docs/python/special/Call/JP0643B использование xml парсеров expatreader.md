@@ -9,7 +9,7 @@
 * xml.sax.expatreader.create_parser
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://github.com/python/cpython/blob/main/Lib/xml/sax/expatreader.py>
 > <https://epydoc.sourceforge.net/stdlib/xml.sax.expatreader.ExpatParser-class.html>
 ---

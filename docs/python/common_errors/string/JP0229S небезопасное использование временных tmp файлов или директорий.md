@@ -36,7 +36,7 @@ with tempfile.TemporaryFile() as tmp:
     tmp.write("stuff")
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://security.openstack.org/guidelines/dg_using-temporary-files-securely.html>
 > <https://cwe.mitre.org/data/definitions/377.html>
 > <https://cwe.mitre.org/data/definitions/379.html>

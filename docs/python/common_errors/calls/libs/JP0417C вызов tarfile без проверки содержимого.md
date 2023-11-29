@@ -5,13 +5,13 @@
 
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 tarfile.extractall()
 tarfile.extractalll(members=function(tarfile))
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/22.html>
 > <https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extractall>
 ---

@@ -6,7 +6,7 @@ autoescape=True в явном виде.
 
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 import jinja2
 
@@ -15,7 +15,7 @@ template = environment.from_string("Hello, {{ name }}!")
 template.render(name="World")
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/94.html>
 > <https://jinja.palletsprojects.com/en/2.11.x/api/#autoescaping>
 ---

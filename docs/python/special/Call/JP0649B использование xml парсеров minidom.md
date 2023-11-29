@@ -10,7 +10,7 @@
 * xml.dom.minidom.parseString
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/xml.dom.minidom.html>
 ---
 * __Степень критичности:__ СРЕДНЯЯ

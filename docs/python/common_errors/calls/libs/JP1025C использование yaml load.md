@@ -4,7 +4,7 @@
 недоверенных источников. Вместо этого рекомендуется использование yaml.safe_load.
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 import yaml
 
@@ -12,7 +12,7 @@ with open("example.yaml", "r") as stream:
     yaml.load(stream)
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/20.htm>
 > <https://pyyaml.org/wiki/PyYAMLDocumentation>
 ---

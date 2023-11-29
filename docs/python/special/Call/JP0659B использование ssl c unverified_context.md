@@ -10,7 +10,7 @@
 * ssl._create_unverified_context
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/http.client.html?highlight=unverified_context>
 ---
 * __Степень критичности:__ СРЕДНЯЯ

@@ -8,7 +8,7 @@
 * eval
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/functions.html#eval>
 > <https://docs.python.org/3/library/ast.html>
 ---

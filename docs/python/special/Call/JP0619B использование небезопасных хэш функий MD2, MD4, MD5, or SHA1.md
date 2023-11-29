@@ -20,7 +20,7 @@
 * cryptography.hazmat.primitives .hashes.SHA1
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/hashlib.html>
 > <https://pycryptodome.readthedocs.io/en/latest/src/hash/hash.html>
 > <https://cryptography.io/en/latest/hazmat/primitives/cryptographic-hashes/>

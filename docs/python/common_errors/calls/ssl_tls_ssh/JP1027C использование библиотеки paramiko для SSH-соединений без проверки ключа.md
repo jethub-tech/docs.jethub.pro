@@ -5,7 +5,7 @@ AutoAddPolicy или WarningPolicy позволяет добавлять клю�
 возможность для MITM атак с умышленной подменой доверенного хоста.
 
 ---
-Пример небезопасного использования:
+Пример небезопасного использовани
 ```python linenums="1"
 import paramiko
 
@@ -15,7 +15,7 @@ client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 client.set_missing_host_key_policy(paramiko.WarningPolicy)
 ```
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/322.html>
 > <https://docs.paramiko.org/en/3.3/api/client.html>
 ---

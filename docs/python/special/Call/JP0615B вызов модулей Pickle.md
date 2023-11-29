@@ -22,7 +22,7 @@
 * jsonpickle.unpickler.Unpickler
 * pandas.read_pickle
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/pickle.html>
 ---
 * __Степень критичности:__ СРЕДНЯЯ

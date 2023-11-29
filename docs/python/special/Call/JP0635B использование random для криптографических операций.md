@@ -17,7 +17,7 @@
 * random.triangular
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.safestring>
 ---
 * __Степень критичности:__ НИЗКАЯ

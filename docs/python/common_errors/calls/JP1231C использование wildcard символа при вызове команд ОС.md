@@ -27,7 +27,7 @@
 * os.execl
 * os.execle
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://cwe.mitre.org/data/definitions/78.html>
 > <https://materials.rangeforce.com/tutorial/2019/11/08/Linux-PrivEsc-Wildcard/>
 ---

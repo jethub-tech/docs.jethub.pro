@@ -9,7 +9,7 @@ NOTE!! НУЖНО ПРОВЕРИТЬ РАБОТУ ТАК КАК ИСПОЛЬЗУ
 -->
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/ssl.html>
 > <https://cwe.mitre.org/data/definitions/327.html>
 ---

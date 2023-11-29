@@ -10,7 +10,7 @@
 * xml.dom.pulldom.parseString
 
 ---
-> Дополнительная информация:
+> Дополнительная информация
 > <https://docs.python.org/3/library/xml.dom.pulldom.html>
 ---
 * __Степень критичности:__ СРЕДНЯЯ
