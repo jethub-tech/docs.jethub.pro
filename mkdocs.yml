@@ -127,83 +127,83 @@ nav:
       # - python/common_errors/error_test.md
       - Класс ВЫЗОВ ФУНКЦИИ:
           - Инъекции:
-            - python/common_errors/calls/injections/JP1215C shell инъекция. Небезопасное использование paramiko.md
-            - python/common_errors/calls/injections/JP1217C shell инъекция. Subprocess с параметром shell True.md
-            - python/common_errors/calls/injections/JP1219C shell инъекция. Subprocess без параметра shell True.md
-            - python/common_errors/calls/injections/JP1221C shell инъекция. Расширенный список Subprocess.md
-            - python/common_errors/calls/injections/JP1223C shell инъекция через прямой вызов системной оболочки.md
-            - python/common_errors/calls/injections/JP1225C shell инъекция. Subprocess без параметра shell True.md
-            - python/common_errors/calls/injections/JP1227C shell инъекция. Запуск процесса с указанием относительного пути.md
-            - python/common_errors/calls/injections/JP1233C shell инъекция через вызов Django extra.md
-            - python/common_errors/calls/injections/JP1235C shell инъекция через вызов Django RawSQL.md
+            - python/common_errors/calls/injections/JP1215C-shell_использование_paramiko.md
+            - python/common_errors/calls/injections/JP1217C-shell_subprocess_с_параметром_shell_True.md
+            - python/common_errors/calls/injections/JP1219C-shell_subprocess_без_параметра_shell_True.md
+            - python/common_errors/calls/injections/JP1221C-shell_расширенный_список_subprocess.md
+            - python/common_errors/calls/injections/JP1223C-shell_через_прямой_вызов_системной_оболочки.md
+            - python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell.md
+            - python/common_errors/calls/injections/JP1227C-shell-запуск_процесса_указание_относительного_пути.md
+            - python/common_errors/calls/injections/JP1233C-shell_вызов_django_extra.md
+            - python/common_errors/calls/injections/JP1235C-shell_вызов_django_rawSQL.md
           - Библиотеки:
-              - python/common_errors/calls/libs/JP0239C использование requests без таймаута.md
-              - python/common_errors/calls/libs/JP0415C использование flask в режиме debug.md
-              - python/common_errors/calls/libs/JP0417C вызов tarfile без проверки содержимого.md
-              - python/common_errors/calls/libs/JP1025C использование yaml load.md
-              - python/common_errors/calls/libs/JP1029C использование устаревшей версии библиотеки SNMP.md
-              - python/common_errors/calls/libs/JP1031C использование библиотеки SNMP со слабым шифрованием.md
-              - python/common_errors/calls/libs/JP1237C небезопасное использование logging с конфигурацией через listen.md
-              - python/common_errors/calls/libs/JP1415C использование jinja2 с параметром autoescape False.md
-              - python/common_errors/calls/libs/JP1417C использование mako без самостоятельной проверки ввода.md
-              - python/common_errors/calls/libs/JP1419C вызов Django mark_safe.md
+              - python/common_errors/calls/libs/JP0239C-использование_requests_без_таймаута.md
+              - python/common_errors/calls/libs/JP0415C-использование_flask_в_режиме_debug.md
+              - python/common_errors/calls/libs/JP0417C-tarfile_без_проверки_содержимого.md
+              - python/common_errors/calls/libs/JP1025C-yaml_load.md
+              - python/common_errors/calls/libs/JP1029C-устаревшая_версия_SNMP.md
+              - python/common_errors/calls/libs/JP1031C-SNMP_слабое_шифрованием.md
+              - python/common_errors/calls/libs/JP1237C-logging_конфигурация_через_listen.md
+              - python/common_errors/calls/libs/JP1415C-jinja2_параме_autoescape_False.md
+              - python/common_errors/calls/libs/JP1417C-mako_без_самостоятельной_проверки_ввода.md
+              - python/common_errors/calls/libs/JP1419C-django_mark_safe.md
           - Протоколы SSL-TLS-SSH:
-            - python/common_errors/calls/ssl_tls_ssh/JP1015C использование requests без проверки SSL сертификатов.md
-            - python/common_errors/calls/ssl_tls_ssh/JP1017C вызов функции с устаревшими TLS_SSL параметрами.md
-            - python/common_errors/calls/ssl_tls_ssh/JP1021C вызов функции SSL без указания TLS_SSL параметра.md
-            - python/common_errors/calls/ssl_tls_ssh/JP1027C использование библиотеки paramiko для SSH-соединений без проверки ключа.md
-          - python/common_errors/calls/JP0217C исполнение кода с помощью exec.md
-          - python/common_errors/calls/JP0219C изменение параметров доступа к файлам через os_chmod.md
-          - python/common_errors/calls/JP0225С использование фиксированных строк для «секретов» при вызове функций.md
-          - python/common_errors/calls/JP0661C Использование небезопасных хэш-функций.md
-          - python/common_errors/calls/JP1023C использование слабых криптографических ключей.md
-          - python/common_errors/calls/JP1231C использование wildcard символа при вызове команд ОС.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1015C-requests_без_проверки_SSL.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1017C-вызов_функции_устаревшие_TLS_SSL_параметры.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1021C-вызов_функции_SSL_без_указания_TLS_SSL_параметра.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1027C-paramiko_для_SSH_без_проверки_ключа.md
+          - python/common_errors/calls/JP0217C-выполнение_кода_через_exec.md
+          - python/common_errors/calls/JP0219C-изменение_параметров_доступа_через_os_chmod.md
+          - python/common_errors/calls/JP0225С-использование_фиксированных_строк_для_секретов_при_вызове_функций.md
+          - python/common_errors/calls/JP0661C-использование_небезопасных_хэш_функций.md
+          - python/common_errors/calls/JP1023C-использование_слабых_криптографических_ключей.md
+          - python/common_errors/calls/JP1231C-использование_wildcard_символа_при_вызове_ос_команд.md
       - Класс ОПРЕДЕЛЕНИЕ ФУНКЦИИ:
-          - python/common_errors/def/JP1019F определение функции с устаревшими TLS_SSL параметрами по умолчанию.md
-          - python/common_errors/def/JP0227F использование фиксированных строк для «секретов» при опредлении функций.md
+          - python/common_errors/def/JP0227F-использование_фиксированных_строк_для_секретов_при_опредлении_функций.md
+          - python/common_errors/def/JP1019F_определение_функции_устаревшие_TLS_SSL_параметры_по_умолчанию.md
       - Класс ИСКЛЮЧЕНИЕ:
-          - python/common_errors/exception/JP0233E блок try-except с использованием pass.md
-          - python/common_errors/exception/JP0237E блок try-except с использованием continue.md
+          - python/common_errors/exception/JP0233E-try_except_использование_pass.md
+          - python/common_errors/exception/JP0237E-try_except_использование_continue.md
       - Класс ПОИСК СТРОК:
-          - python/common_errors/string/JP0221S привязка к адресу «все интерфейсы».md
-          - python/common_errors/string/JP0223S использование фиксированных строк для переменных «секретов».md
-          - python/common_errors/string/JP0229S небезопасное использование временных tmp файлов или директорий.md
-          - python/common_errors/string/JP1229S SQL инъекция.md
+          - python/common_errors/string/JP0221S-привязка_к_адресу_все_интерфейсы.md
+          - python/common_errors/string/JP0223S_использование_фиксированных_строк_для_переменных_секретов.md
+          - python/common_errors/string/JP0229S-использование_временных_tmp_файлов_директорий.md
+          - python/common_errors/string/JP1229S-SQL_инъекция.md
     - Специальные:
       - Класс Blacklist Call:
-          - python/special/call/JP0615B вызов модулей pickle.md
-          - python/special/call/JP0617B вызов модулей marshal.md
-          - python/special/call/JP0619B использование небезопасных хэш функий MD2, MD4, MD5, or SHA1.md
-          - python/special/call/JP0621B использование небезопасных шифров.md
-          - python/special/call/JP0623B использование небезопасных шифров (режими функций).md
-          - python/special/call/JP0625B использование небезопасной функции mktemp.md
-          - python/special/call/JP0627B использование небезопасной функции eval.md
-          - python/special/call/JP0629B использование небезопасной функции mark_safe из пакета Django.md
-          - python/special/call/JP0633B использование небезопасных схем urllib urlopen.md
-          - python/special/call/JP0635B использование random для криптографических операций.md
-          - python/special/call/JP0637B использование telnet.md
-          - python/special/call/JP0639B использование xml парсеров cElementTree.md
-          - python/special/call/JP0641B использование xml парсеров ElementTree.md
-          - python/special/call/JP0643B использование xml парсеров expatreader.md
-          - python/special/call/JP0645B использование xml парсеров expatbuilder.md
-          - python/special/call/JP0647B использование xml парсеров sax.md
-          - python/special/call/JP0649B использование xml парсеров minidom.md
-          - python/special/call/JP0651B использование xml парсеров pulldom.md
-          - python/special/call/JP0653B использование xml парсеров etree.md
-          - python/special/call/JP0655B использование протокола FTP.md
-          - python/special/call/JP0657B использование протокола input python2.md
-          - python/special/call/JP0659B использование ssl c unverified_context.md
+          - python/special/call/JP0615B-модулей_pickle.md
+          - python/special/call/JP0617B-модулей_marshal.md
+          - python/special/call/JP0619B-хэш_функий_MD2_MD4_MD5_SHA1.md
+          - python/special/call/JP0621B-шифров.md
+          - python/special/call/JP0623B-шифров_режим_функций.md
+          - python/special/call/JP0625B-функции_mktemp.md
+          - python/special/call/JP0627B-функции_eval.md
+          - python/special/call/JP0629B-функции_mark_safe_из_django.md
+          - python/special/call/JP0633B-схем_urllib_urlopen.md
+          - python/special/call/JP0635B-random_для_криптографических_операций.md
+          - python/special/call/JP0637B-telnet.md
+          - python/special/call/JP0639B-xml_парсеров_cElementTree.md
+          - python/special/call/JP0641B-xml_парсеров_ElementTree.md
+          - python/special/call/JP0643B-xml_парсеров_expatreader.md
+          - python/special/call/JP0645B-xml_парсеров_expatbuilder.md
+          - python/special/call/JP0647B-xml_парсеров_sax.md
+          - python/special/call/JP0649B-xml_парсеров_minidom.md
+          - python/special/call/JP0651B-xml_парсеров_pulldom.md
+          - python/special/call/JP0653B-xml_парсеров_etree.md
+          - python/special/call/JP0655B-протокола_FTP.md
+          - python/special/call/JP0657B-протокола_input_python2.md
+          - python/special/call/JP0659B-ssl_unverified_context.md
       - Класс Blacklist Import:
-          - python/special/import/JP0815B импорт telnetlib.md
-          - python/special/import/JP0817B импорт бибилиотек FTP.md
-          - python/special/import/JP0819B импорт модулей pickle.md
-          - python/special/import/JP0823B импорт xml парсеров xml.etree.md
-          - python/special/import/JP0825B импорт xml парсеров sax.md
-          - python/special/import/JP0827B использование xml парсеров expatbuilder.md
-          - python/special/import/JP0829B импорт xml парсеров minidom.md
-          - python/special/import/JP0831B импорт xml парсеров pulldom.md
-          - python/special/import/JP0833B импорт xml парсеров lxml.md
-          - python/special/import/JP0835B импорт xmlrpc библиотек.md
-          - python/special/import/JP0837B импорт httpoxy библиотек.md
-          - python/special/import/JP0839B импорт библиотек crypto.md
-          - python/special/import/JP0843B импорт библиотек pyghmi.md
+          - python/special/import/JP0815B-telnetlib.md
+          - python/special/import/JP0817B-FTP.md
+          - python/special/import/JP0819B-модулей_pickle.md
+          - python/special/import/JP0823B-xml_парсеров_xml.etree.md
+          - python/special/import/JP0825B-xml_парсеров_sax.md
+          - python/special/import/JP0827B-xml_парсеров_expatbuilder.md
+          - python/special/import/JP0829B-xml_парсеров_minidom.md
+          - python/special/import/JP0831B-xml_парсеров_pulldom.md
+          - python/special/import/JP0833B-xml_парсеров_lxml.md
+          - python/special/import/JP0835B-xmlrpc.md
+          - python/special/import/JP0837B-с_уязвимостью_httpoxy.md
+          - python/special/import/JP0839B-crypto.md
+          - python/special/import/JP0843B-pyghmi.md
