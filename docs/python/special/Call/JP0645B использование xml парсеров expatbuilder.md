@@ -1,12 +1,12 @@
 # JP0645B
 ## Использование xml парсеров expatbuilder
-Модули xml.dom.expatbuilder небезопасны при парсинге данных из недоверенного источника.
+Модуля xml.dom.expatbuilder небезопасны при парсинге данных из недоверенного источника.
 
 
 ---
 Список вызовов:
 
-* xml.dom.expatbuilder.parse 
+* xml.dom.expatbuilder.parse
 * xml.dom.expatbuilder.parseString
 
 ---

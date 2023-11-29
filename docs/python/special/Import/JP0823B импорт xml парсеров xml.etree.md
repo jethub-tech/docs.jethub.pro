@@ -1,6 +1,6 @@
 # JP0823B
 ## Импорт xml парсеров xml.etree
-Модули xml.etree.ElementTree (также модули устаревшей cElementTree 
+Модули xml.etree.ElementTree (также модули устаревшей cElementTree
 обертки на языке С) небезопасны при парсинге данных из недоверенного источника.
 
 

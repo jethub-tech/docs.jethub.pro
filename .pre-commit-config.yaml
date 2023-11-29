@@ -58,7 +58,7 @@ repos:
     hooks:
       - id: pyright
 
-  - repo: https://github.com/hcodes/yaspeller.git
-    rev: v10.0.1
-    hooks:
-      - id: yaspeller
+  # - repo: https://github.com/hcodes/yaspeller.git
+  #   rev: v10.0.1
+  #   hooks:
+  #     - id: yaspeller

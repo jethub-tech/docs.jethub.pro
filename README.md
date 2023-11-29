@@ -1,6 +1,6 @@
 # docs.jethub.pro
 
-разработано на движке [mkdocs](https://github.com/squidfunk/mkdocs-material)
+используется движок [mkdocs](https://github.com/squidfunk/mkdocs-material)
 
 - установить нужные библиотеки (лучше в отдельном виртуальном окружении)
 

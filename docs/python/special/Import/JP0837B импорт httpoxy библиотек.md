@@ -7,8 +7,8 @@
 ---
 Список проверяемых импортов:
 
-* wsgiref.handlers.CGIHandler 
-* twisted.web.twcgi.CGIScript 
+* wsgiref.handlers.CGIHandler
+* twisted.web.twcgi.CGIScript
 * twisted.web.twcgi.CGIDirectory
 
 ---

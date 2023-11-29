@@ -6,11 +6,11 @@
 ---
 Список вызовов:
 
-* lxml.etree.parse 
-* lxml.etree.fromstring 
-* lxml.etree.RestrictedElement 
-* lxml.etree.GlobalParserTLS 
-* lxml.etree.getDefaultParser 
+* lxml.etree.parse
+* lxml.etree.fromstring
+* lxml.etree.RestrictedElement
+* lxml.etree.GlobalParserTLS
+* lxml.etree.getDefaultParser
 * lxml.etree.check_docinfo
 
 ---

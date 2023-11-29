@@ -6,7 +6,7 @@
 ---
 Список вызовов:
 
-* xml.dom.pulldom.parse 
+* xml.dom.pulldom.parse
 * xml.dom.pulldom.parseString
 
 ---

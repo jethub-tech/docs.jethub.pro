@@ -6,7 +6,7 @@
 ---
 Список вызовов:
 
-* xml.dom.minidom.parse 
+* xml.dom.minidom.parse
 * xml.dom.minidom.parseString
 
 ---

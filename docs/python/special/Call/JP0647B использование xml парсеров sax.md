@@ -6,8 +6,8 @@
 ---
 Список вызовов:
 
-* xml.sax.parse 
-* xml.sax.parseString 
+* xml.sax.parse
+* xml.sax.parseString
 * xml.sax.make_parser
 
 ---

@@ -1,6 +1,6 @@
 # JP0639B
 ## Использование xml парсеров cElementTree
-Модули xml.etree.ElementTree (также модули устаревшей cElementTree 
+Модули xml.etree.ElementTree (также модули устаревшей cElementTree
 обертки на языке С) небезопасны при парсинге данных из недоверенного источника.
 
 
