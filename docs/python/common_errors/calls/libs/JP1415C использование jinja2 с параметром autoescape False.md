@@ -7,8 +7,9 @@ autoescape=True в явном виде.
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 import jinja2
+
 environment = jinja2.Environment(autoescape=False)
 template = environment.from_string("Hello, {{ name }}!")
 template.render(name="World")

@@ -6,14 +6,13 @@ AutoAddPolicy или WarningPolicy позволяет добавлять клю�
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 import paramiko
 
 client = paramiko.SSHClient()
 client.load_system_host_keys()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 client.set_missing_host_key_policy(paramiko.WarningPolicy)
-)
 ```
 ---
 > Дополнительная информация:

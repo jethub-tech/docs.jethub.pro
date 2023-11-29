@@ -12,7 +12,8 @@
 -->
 
 Пример небезопасного создания временного файла:
-```
+
+```python linenums="1"
 import os
 import tempfile
 
@@ -22,15 +23,17 @@ if not os.path.exists(tmp):
     with open(tmp, "w") file:
         file.write("defaults")
 ```
+
 Пример безопасного использования:
-```
+
+```python linenums="1"
 import os
 import tempfile
 
 # Use the TemporaryFile context manager for easy clean-up
 with tempfile.TemporaryFile() as tmp:
     # Do stuff with tmp
-    tmp.write('stuff')
+    tmp.write("stuff")
 ```
 ---
 > Дополнительная информация:

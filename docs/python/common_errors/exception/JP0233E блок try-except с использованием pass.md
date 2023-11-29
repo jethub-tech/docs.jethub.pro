@@ -6,7 +6,7 @@
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
   try:
     f()
   except Exception:

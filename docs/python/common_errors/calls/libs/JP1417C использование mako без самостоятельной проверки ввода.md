@@ -8,8 +8,9 @@ HTML шаблонов и открывает уязвимость к XSS атак
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 import mako
+
 mako.template.Template("my_template")
 ```
 ---

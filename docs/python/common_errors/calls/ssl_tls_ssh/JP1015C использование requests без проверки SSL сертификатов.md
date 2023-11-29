@@ -6,9 +6,10 @@ SSL сертификатов протокола HTTPS при работе вне
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 import requests
-requests.get('https://example.com', verify=False)
+
+requests.get("https://example.com", verify=False)
 ```
 ---
 > Дополнительная информация:

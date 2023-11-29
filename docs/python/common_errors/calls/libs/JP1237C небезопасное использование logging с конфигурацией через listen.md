@@ -8,7 +8,7 @@
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 t = logging.config.listen(port=1234)  # verify=None
 ```
 ---

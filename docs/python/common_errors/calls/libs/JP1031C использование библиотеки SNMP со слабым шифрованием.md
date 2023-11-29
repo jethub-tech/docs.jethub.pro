@@ -4,15 +4,15 @@
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 from pysnmp.hlapi import *
 
 iterator = getCmd(
     SnmpEngine(),
-    UsmUserData('usr-none-none'),  # no auth, no privacy set
-    UdpTransportTarget(('demo.snmplabs.com', 161)),
+    UsmUserData("usr-none-none"),  # no auth, no privacy set
+    UdpTransportTarget(("demo.snmplabs.com", 161)),
     ContextData(),
-    ObjectType(ObjectIdentity('IF-MIB', 'ifInOctets', 1))
+    ObjectType(ObjectIdentity("IF-MIB", "ifInOctets", 1))
 )
 ```
 ---

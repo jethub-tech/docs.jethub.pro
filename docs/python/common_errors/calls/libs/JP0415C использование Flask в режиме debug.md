@@ -6,10 +6,14 @@ Flask в режиме отладки использует дебаггер Werkz
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 app.run(debug=True)
+```
+
+```bash
 python -m flask run --host=0.0.0.0
 ```
+
 ---
 > Дополнительная информация:
 > <https://cwe.mitre.org/data/definitions/80.html>

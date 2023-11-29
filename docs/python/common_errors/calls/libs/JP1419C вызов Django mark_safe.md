@@ -7,7 +7,7 @@
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 def function(url):
     html = f'<a href="{url}">{url}</a>'
     return mark_safe(html)

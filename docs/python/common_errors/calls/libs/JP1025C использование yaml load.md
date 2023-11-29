@@ -5,10 +5,11 @@
 
 ---
 Пример небезопасного использования:
-```
+```python linenums="1"
 import yaml
+
 with open("example.yaml", "r") as stream:
-    (yaml.load(stream))
+    yaml.load(stream)
 ```
 ---
 > Дополнительная информация:
