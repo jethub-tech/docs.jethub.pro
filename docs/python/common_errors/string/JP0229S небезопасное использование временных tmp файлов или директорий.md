@@ -37,6 +37,7 @@ with tempfile.TemporaryFile() as tmp:
 ```
 
 ## Дополнительная информация
+
 * <https://security.openstack.org/guidelines/dg_using-temporary-files-securely.html>
 * <https://cwe.mitre.org/data/definitions/377.html>
 * <https://cwe.mitre.org/data/definitions/379.html>
