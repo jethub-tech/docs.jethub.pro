@@ -158,19 +158,19 @@ nav:
           - python/common_errors/calls/JP0661C-использование_небезопасных_хэш_функций.md
           - python/common_errors/calls/JP1023C-использование_слабых_криптографических_ключей.md
           - python/common_errors/calls/JP1231C-использование_wildcard_символа_при_вызове_ос_команд.md
-      - Класс ОПРЕДЕЛЕНИЕ ФУНКЦИИ:
+      - Класс «Определение Функции»:
           - python/common_errors/def/JP0227F-использование_фиксированных_строк_для_секретов_при_опредлении_функций.md
           - python/common_errors/def/JP1019F_определение_функции_устаревшие_TLS_SSL_параметры_по_умолчанию.md
-      - Класс ИСКЛЮЧЕНИЕ:
+      - Класс «Исключение»:
           - python/common_errors/exception/JP0233E-try_except_использование_pass.md
           - python/common_errors/exception/JP0237E-try_except_использование_continue.md
-      - Класс ПОИСК СТРОК:
+      - Класс «Поиск Строк»:
           - python/common_errors/string/JP0221S-привязка_к_адресу_все_интерфейсы.md
           - python/common_errors/string/JP0223S_использование_фиксированных_строк_для_переменных_секретов.md
           - python/common_errors/string/JP0229S-использование_временных_tmp_файлов_директорий.md
           - python/common_errors/string/JP1229S-SQL_инъекция.md
     - Специальные:
-      - Класс Blacklist Call:
+      - Класс «blacklist call»:
           - python/special/call/JP0615B-модулей_pickle.md
           - python/special/call/JP0617B-модулей_marshal.md
           - python/special/call/JP0619B-хэш_функий_MD2_MD4_MD5_SHA1.md
@@ -193,7 +193,7 @@ nav:
           - python/special/call/JP0655B-протокола_FTP.md
           - python/special/call/JP0657B-протокола_input_python2.md
           - python/special/call/JP0659B-ssl_unverified_context.md
-      - Класс Blacklist Import:
+      - Класс «blacklist import»:
           - python/special/import/JP0815B-telnetlib.md
           - python/special/import/JP0817B-FTP.md
           - python/special/import/JP0819B-модулей_pickle.md
