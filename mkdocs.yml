@@ -10,7 +10,7 @@ theme:
 
   font:
     text: Golos Text
-    code: JetBrains Mono
+    code: PT Mono
 
   favicon: assets/logo-jh-invert.png
   logo: assets/logo-jh-invert.png
@@ -92,8 +92,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -123,5 +123,87 @@ nav:
     - index.md
   - Python:
     - python/index.md
-    - Ошибки:
-      - python/errors/error_test.md
+    - Общие:
+      # - python/common_errors/error_test.md
+      - Класс «Вызов Функции»:
+          - Инъекции:
+            - python/common_errors/calls/injections/JP1215C-shell_использование_paramiko.md
+            - python/common_errors/calls/injections/JP1217C-shell_subprocess_с_параметром_shell_True.md
+            - python/common_errors/calls/injections/JP1219C-shell_subprocess_без_параметра_shell_True.md
+            - python/common_errors/calls/injections/JP1221C-shell_расширенный_список_subprocess.md
+            - python/common_errors/calls/injections/JP1223C-shell_через_прямой_вызов_системной_оболочки.md
+            - python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell.md
+            - python/common_errors/calls/injections/JP1227C-shell-запуск_процесса_указание_относительного_пути.md
+            - python/common_errors/calls/injections/JP1233C-shell_вызов_django_extra.md
+            - python/common_errors/calls/injections/JP1235C-shell_вызов_django_rawSQL.md
+          - Библиотеки:
+              - python/common_errors/calls/libs/JP0239C-использование_requests_без_таймаута.md
+              - python/common_errors/calls/libs/JP0415C-использование_flask_в_режиме_debug.md
+              - python/common_errors/calls/libs/JP0417C-tarfile_без_проверки_содержимого.md
+              - python/common_errors/calls/libs/JP1025C-yaml_load.md
+              - python/common_errors/calls/libs/JP1029C-устаревшая_версия_SNMP.md
+              - python/common_errors/calls/libs/JP1031C-SNMP_слабое_шифрованием.md
+              - python/common_errors/calls/libs/JP1237C-logging_конфигурация_через_listen.md
+              - python/common_errors/calls/libs/JP1415C-jinja2_параме_autoescape_False.md
+              - python/common_errors/calls/libs/JP1417C-mako_без_самостоятельной_проверки_ввода.md
+              - python/common_errors/calls/libs/JP1419C-django_mark_safe.md
+          - Протоколы SSL-TLS-SSH:
+            - python/common_errors/calls/ssl_tls_ssh/JP1015C-requests_без_проверки_SSL.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1017C-вызов_функции_устаревшие_TLS_SSL_параметры.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1021C-вызов_функции_SSL_без_указания_TLS_SSL_параметра.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1027C-paramiko_для_SSH_без_проверки_ключа.md
+          - python/common_errors/calls/JP0217C-выполнение_кода_через_exec.md
+          - python/common_errors/calls/JP0219C-изменение_параметров_доступа_через_os_chmod.md
+          - python/common_errors/calls/JP0225С-использование_фиксированных_строк_для_секретов_при_вызове_функций.md
+          - python/common_errors/calls/JP0661C-использование_небезопасных_хэш_функций.md
+          - python/common_errors/calls/JP1023C-использование_слабых_криптографических_ключей.md
+          - python/common_errors/calls/JP1231C-использование_wildcard_символа_при_вызове_ос_команд.md
+      - Класс «Определение Функции»:
+          - python/common_errors/def/JP0227F-использование_фиксированных_строк_для_секретов_при_опредлении_функций.md
+          - python/common_errors/def/JP1019F_определение_функции_устаревшие_TLS_SSL_параметры_по_умолчанию.md
+      - Класс «Исключение»:
+          - python/common_errors/exception/JP0233E-try_except_использование_pass.md
+          - python/common_errors/exception/JP0237E-try_except_использование_continue.md
+      - Класс «Поиск Строк»:
+          - python/common_errors/string/JP0221S-привязка_к_адресу_все_интерфейсы.md
+          - python/common_errors/string/JP0223S_использование_фиксированных_строк_для_переменных_секретов.md
+          - python/common_errors/string/JP0229S-использование_временных_tmp_файлов_директорий.md
+          - python/common_errors/string/JP1229S-SQL_инъекция.md
+    - Специальные:
+      - Класс «Вызов Функции из списка blacklist»:
+          - python/special/call/JP0615B-модулей_pickle.md
+          - python/special/call/JP0617B-модулей_marshal.md
+          - python/special/call/JP0619B-хэш_функий_MD2_MD4_MD5_SHA1.md
+          - python/special/call/JP0621B-шифров.md
+          - python/special/call/JP0623B-шифров_режим_функций.md
+          - python/special/call/JP0625B-функции_mktemp.md
+          - python/special/call/JP0627B-функции_eval.md
+          - python/special/call/JP0629B-функции_mark_safe_из_django.md
+          - python/special/call/JP0633B-схем_urllib_urlopen.md
+          - python/special/call/JP0635B-random_для_криптографических_операций.md
+          - python/special/call/JP0637B-telnet.md
+          - python/special/call/JP0639B-xml_парсеров_cElementTree.md
+          - python/special/call/JP0641B-xml_парсеров_ElementTree.md
+          - python/special/call/JP0643B-xml_парсеров_expatreader.md
+          - python/special/call/JP0645B-xml_парсеров_expatbuilder.md
+          - python/special/call/JP0647B-xml_парсеров_sax.md
+          - python/special/call/JP0649B-xml_парсеров_minidom.md
+          - python/special/call/JP0651B-xml_парсеров_pulldom.md
+          - python/special/call/JP0653B-xml_парсеров_etree.md
+          - python/special/call/JP0655B-протокола_FTP.md
+          - python/special/call/JP0657B-протокола_input_python2.md
+          - python/special/call/JP0659B-ssl_unverified_context.md
+      - Класс «Импорт Функции из списка blacklist»:
+          - python/special/import/JP0815B-telnetlib.md
+          - python/special/import/JP0817B-FTP.md
+          - python/special/import/JP0819B-модулей_pickle.md
+          - python/special/import/JP0823B-xml_парсеров_xml.etree.md
+          - python/special/import/JP0825B-xml_парсеров_sax.md
+          - python/special/import/JP0827B-xml_парсеров_expatbuilder.md
+          - python/special/import/JP0829B-xml_парсеров_minidom.md
+          - python/special/import/JP0831B-xml_парсеров_pulldom.md
+          - python/special/import/JP0833B-xml_парсеров_lxml.md
+          - python/special/import/JP0835B-xmlrpc.md
+          - python/special/import/JP0837B-с_уязвимостью_httpoxy.md
+          - python/special/import/JP0839B-crypto.md
+          - python/special/import/JP0843B-pyghmi.md

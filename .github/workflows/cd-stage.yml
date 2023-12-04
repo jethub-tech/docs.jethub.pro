@@ -18,7 +18,7 @@ jobs:
       contents: write
     environment:
       name: site-stage
-      # url: https://site-stage.netlify.app/   # todo: создать и обновить сайт
+      # url: https://example.stage.site
 
     steps:
 
