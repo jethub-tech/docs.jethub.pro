@@ -125,7 +125,7 @@ nav:
     - python/index.md
     - Общие:
       # - python/common_errors/error_test.md
-      - Класс ВЫЗОВ ФУНКЦИИ:
+      - Класс «Вызов Функции»:
           - Инъекции:
             - python/common_errors/calls/injections/JP1215C-shell_использование_paramiko.md
             - python/common_errors/calls/injections/JP1217C-shell_subprocess_с_параметром_shell_True.md
@@ -170,7 +170,7 @@ nav:
           - python/common_errors/string/JP0229S-использование_временных_tmp_файлов_директорий.md
           - python/common_errors/string/JP1229S-SQL_инъекция.md
     - Специальные:
-      - Класс «blacklist call»:
+      - Класс «Вызов Функции из списка blacklist»:
           - python/special/call/JP0615B-модулей_pickle.md
           - python/special/call/JP0617B-модулей_marshal.md
           - python/special/call/JP0619B-хэш_функий_MD2_MD4_MD5_SHA1.md
@@ -193,7 +193,7 @@ nav:
           - python/special/call/JP0655B-протокола_FTP.md
           - python/special/call/JP0657B-протокола_input_python2.md
           - python/special/call/JP0659B-ssl_unverified_context.md
-      - Класс «blacklist import»:
+      - Класс «Импорт Функции из списка blacklist»:
           - python/special/import/JP0815B-telnetlib.md
           - python/special/import/JP0817B-FTP.md
           - python/special/import/JP0819B-модулей_pickle.md
