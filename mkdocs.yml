@@ -160,13 +160,13 @@ nav:
           - python/common_errors/calls/JP1231C-использование_wildcard_символа_при_вызове_ос_команд.md
       - Класс «Определение Функции»:
           - python/common_errors/def/JP0227F-использование_фиксированных_строк_для_секретов_при_опредлении_функций.md
-          - python/common_errors/def/JP1019F_определение_функции_устаревшие_TLS_SSL_параметры_по_умолчанию.md
+          - python/common_errors/def/JP1019F-определение_функции_устаревшие_TLS_SSL_параметры_по_умолчанию.md
       - Класс «Исключение»:
           - python/common_errors/exception/JP0233E-try_except_использование_pass.md
           - python/common_errors/exception/JP0237E-try_except_использование_continue.md
       - Класс «Поиск Строк»:
           - python/common_errors/string/JP0221S-привязка_к_адресу_все_интерфейсы.md
-          - python/common_errors/string/JP0223S_использование_фиксированных_строк_для_переменных_секретов.md
+          - python/common_errors/string/JP0223S-использование_фиксированных_строк_для_переменных_секретов.md
           - python/common_errors/string/JP0229S-использование_временных_tmp_файлов_директорий.md
           - python/common_errors/string/JP1229S-SQL_инъекция.md
     - Специальные:
