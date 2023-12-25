@@ -13,6 +13,8 @@
 ## Пример небезопасного использования
 
 ```python linenums="1"
+import tarfile
+
 tarfile.extractall()
 tarfile.extractalll(members=function(tarfile))
 ```
