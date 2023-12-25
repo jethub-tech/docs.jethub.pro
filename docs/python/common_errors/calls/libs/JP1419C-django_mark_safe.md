@@ -9,6 +9,8 @@
 ## Пример небезопасного использования
 
 ```python linenums="1"
+from django.utils.safestring import mark_safe
+
 def function(url):
     html = f'<a href="{url}">{url}</a>'
     return mark_safe(html)
