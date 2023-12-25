@@ -16,13 +16,8 @@
 ## Пример небезопасного создания временного файла
 
 ```python linenums="1"
-import os
-import tempfile
-
-tmp = os.path.join(tempfile.gettempdir(), filename)
-if not os.path.exists(tmp):
-    with open(tmp, "w") file:
-        file.write("defaults")
+with open('/var/tmp/123', 'w') as f:
+    f.write('def')
 ```
 
 ## Пример безопасного использования
