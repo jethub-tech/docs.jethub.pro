@@ -9,6 +9,9 @@ Flask в режиме отладки использует дебаггер Werkz
 ## Пример небезопасного использования
 
 ```python linenums="1"
+from flask import Flask
+
+app = Flask(__name__)
 app.run(debug=True)
 ```
 
