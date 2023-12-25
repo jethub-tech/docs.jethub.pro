@@ -9,6 +9,8 @@
 ## Пример небезопасного использования
 
 ```python linenums="1"
+import paramiko
+
 paramiko.exec_command("command to be sanitized by developer")
 ```
 
