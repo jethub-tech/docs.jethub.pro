@@ -9,7 +9,7 @@
 ## Пример небезопасного использования
 
 ```python linenums="1"
-from pysnmp.hlapi import *
+from pysnmp.hlapi import SnmpEngine, getCmd, CommunityData, UdpTransportTarget, ContextData, ObjectType, ObjectIdentity
 
 iterator = getCmd(
     SnmpEngine(),
