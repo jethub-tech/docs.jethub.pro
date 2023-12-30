@@ -138,7 +138,7 @@ nav:
             - python/common_errors/calls/injections/JP1235C-shell_вызов_django_rawSQL.md
           - Библиотеки:
               - python/common_errors/calls/libs/JP0239C-использование_requests_без_таймаута.md
-              - python/common_errors/calls/libs/JP0415C-использование_flask_в_режиме_debug.md
+              - python/common_errors/calls/libs/JP0415C-использование_flask_в_режиме_отладки.md
               - python/common_errors/calls/libs/JP0417C-tarfile_без_проверки_содержимого.md
               - python/common_errors/calls/libs/JP1025C-yaml_load.md
               - python/common_errors/calls/libs/JP1029C-устаревшая_версия_SNMP.md
@@ -157,7 +157,7 @@ nav:
           - python/common_errors/calls/JP0225С-использование_фиксированных_строк_для_секретов_при_вызове_функций.md
           - python/common_errors/calls/JP0661C-использование_небезопасных_хэш_функций.md
           - python/common_errors/calls/JP1023C-использование_слабых_криптографических_ключей.md
-          - python/common_errors/calls/JP1231C-использование_wildcard_символа_при_вызове_ос_команд.md
+          - python/common_errors/calls/JP1231C-использование_знака подстановки_при_вызове_ос_команд.md
       - Класс «Определение Функции»:
           - python/common_errors/def/JP0227F-использование_фиксированных_строк_для_секретов_при_опредлении_функций.md
           - python/common_errors/def/JP1019F-определение_функции_устаревшие_TLS_SSL_параметры_по_умолчанию.md
@@ -173,7 +173,7 @@ nav:
       - Класс «Вызов Функции из списка blacklist»:
           - python/special/call/JP0615B-модулей_pickle.md
           - python/special/call/JP0617B-модулей_marshal.md
-          - python/special/call/JP0619B-хэш_функий_MD2_MD4_MD5_SHA1.md
+          - python/special/call/JP0619B-хэш_функий_md2_md4_md5_sha1.md
           - python/special/call/JP0621B-шифров.md
           - python/special/call/JP0623B-шифров_режим_функций.md
           - python/special/call/JP0625B-функции_mktemp.md

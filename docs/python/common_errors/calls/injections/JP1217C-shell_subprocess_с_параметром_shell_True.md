@@ -1,5 +1,5 @@
 # JP1217C
-## Проверка вызова модуля Subprocess c параметром `shell`
+## Проверка вызова модуля `subprocess` c параметром `shell`
 
 <!---
 NOTE!! CHANGE TO HIGH-LOW
