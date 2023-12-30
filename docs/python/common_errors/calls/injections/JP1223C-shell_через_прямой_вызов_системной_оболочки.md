@@ -11,6 +11,8 @@
 ## Пример небезопасного использования
 
 ```python linenums="1"
+import os
+
 def your_echo(input: str):
     os.system(f"/bin/echo {input}")
 ```

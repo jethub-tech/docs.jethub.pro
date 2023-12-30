@@ -9,7 +9,7 @@
 ## Пример небезопасного использования
 
 ```python linenums="1"
-qs.extra(select={"val": f"select col from sometable where othercol = '{param}'"})
+qs.extra(select={"val": f'select col from sometable where othercol = "{param}"'})
 ```
 
 ## Дополнительная информация

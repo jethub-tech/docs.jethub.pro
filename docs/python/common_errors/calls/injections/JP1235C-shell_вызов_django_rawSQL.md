@@ -11,7 +11,7 @@
 ```python linenums="1"
 from django.db.models.expressions import RawSQL
 
-queryset.annotate(val=RawSQL(f"select col from sometable where othercol = '{param}'"))
+queryset.annotate(val=RawSQL(f'select col from sometable where othercol = "{param}"'))
 ```
 
 ## Дополнительная информация

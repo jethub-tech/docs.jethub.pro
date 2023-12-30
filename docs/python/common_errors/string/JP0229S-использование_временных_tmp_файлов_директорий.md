@@ -16,8 +16,8 @@
 ## Пример небезопасного создания временного файла
 
 ```python linenums="1"
-with open('/var/tmp/123', 'w') as f:
-    f.write('def')
+with open("/var/tmp/123", "w") as f:
+    f.write("def")
 ```
 
 ## Пример безопасного использования

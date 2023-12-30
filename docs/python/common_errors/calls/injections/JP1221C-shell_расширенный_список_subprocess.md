@@ -19,7 +19,7 @@ NOTE!! CHANGE TO HIGH-LOW
 from subprocess import Popen
 
 def call_gcc(param: str):
-    Popen(f'bin/gcc {param}', shell=True)
+    Popen(f"bin/gcc {param}", shell=True)
 ```
 
 <!---NOTE!! CHECK execute with timeout-->

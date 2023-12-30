@@ -18,7 +18,7 @@ sql = "UPDATE dbtable SET {values} WHERE {in_clause}".format(
     in_clause=in_clause,
 )
 
-cursor.execute("SELECT * FROM TEST WHERE ID = '%s'" % (id_1_param,))
+cursor.execute('SELECT * FROM TEST WHERE ID = "%s"' % (id_1_param,))
 ```
 
 ## Дополнительная информация
