@@ -191,7 +191,6 @@ nav:
           - python/special/call/JP0651B-xml_парсеров_pulldom.md
           - python/special/call/JP0653B-xml_парсеров_etree.md
           - python/special/call/JP0655B-протокола_FTP.md
-          - python/special/call/JP0657B-протокола_input_python2.md
           - python/special/call/JP0659B-ssl_unverified_context.md
       - Класс «Импорт Функции из списка blacklist»:
           - python/special/import/JP0815B-telnetlib.md
