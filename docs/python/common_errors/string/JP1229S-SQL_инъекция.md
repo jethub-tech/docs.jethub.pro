@@ -16,9 +16,9 @@
 sql = "UPDATE dbtable SET {values} WHERE {in_clause}".format(
     values=values,
     in_clause=in_clause,
-)
+)  # confidence LOW (not wrapped in 'execute' call)
 
-cursor.execute("SELECT * FROM TEST WHERE ID = '%s'" % (id_1_param,))
+cursor.execute("SELECT * FROM TEST WHERE ID = '%s'" % (id_1_param,))  # confidence MEDIUM as it is wrapped in 'execute' call
 ```
 
 ## Дополнительная информация
