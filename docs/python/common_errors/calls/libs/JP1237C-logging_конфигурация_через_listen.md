@@ -17,6 +17,3 @@ log_comfig = logging.config.listen(port=1234)  # verify=None
 ## Дополнительная информация
 
 * <https://docs.python.org/3/library/logging.config.html#logging.config.listen>
-
-* __Степень критичности:__ СРЕДНЯЯ
-* __Достоверность определения:__ ВЫСОКАЯ

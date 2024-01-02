@@ -18,8 +18,9 @@
 ```python linenums="1"
 import tarfile
 
-tarfile.extractall()
-tarfile.extractalll(members=function(tarfile))
+tarfile.extractalll(members=function(tarfile))  # members filtered via functions - severity and confidence LOW
+tarfile.extractalll(members=?)  # members filtered without function - severity and confidence MEDIUM
+tarfile.extractall()    # all members from the archive are trusted - severity and confidence HIGH
 ```
 
 ## Дополнительная информация
