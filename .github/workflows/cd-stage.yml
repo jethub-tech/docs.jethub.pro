@@ -2,9 +2,7 @@ name: cd-stage
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - 'dependabot/**'
+  pull_request:
 
 env:
   PUBLISH_BRANCH: site-stage
