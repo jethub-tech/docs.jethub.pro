@@ -116,6 +116,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.jethub.pro/python/common_errors/calls/libs/JP1033C-json_load_large/</loc>
+         <lastmod>2024-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.jethub.pro/python/common_errors/calls/libs/JP1237C-logging_%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_listen/</loc>
          <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
@@ -362,6 +367,11 @@
     </url>
     <url>
          <loc>https://docs.jethub.pro/python/special/import/JP0843B-pyghmi/</loc>
+         <lastmod>2024-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.jethub.pro/python/special/import/JP0847B-import_all/</loc>
          <lastmod>2024-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
