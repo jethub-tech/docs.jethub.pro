@@ -21,5 +21,5 @@ data = json.load(_file)
 
 ## Дополнительная информация
 
-* <https://cwe.mitre.org/data/definitions/20.htm>
-* <https://pyyaml.org/wiki/PyYAMLDocumentation>
+* <https://cwe.mitre.org/data/definitions/502.html>
+* <https://docs.python.org/3/library/json.html>
