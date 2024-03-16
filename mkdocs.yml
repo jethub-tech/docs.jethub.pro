@@ -147,6 +147,7 @@ nav:
               - python/common_errors/calls/libs/JP1029C-устаревшая_версия_SNMP.md
               - python/common_errors/calls/libs/JP1031C-SNMP_слабое_шифрованием.md
               - python/common_errors/calls/libs/JP1033C-json_load_large.md
+              - python/common_errors/calls/libs/JP1037C-csv_write_injection.md
               - python/common_errors/calls/libs/JP1237C-logging_конфигурация_через_listen.md
               - python/common_errors/calls/libs/JP1415C-jinja2_параме_autoescape_False.md
               - python/common_errors/calls/libs/JP1417C-mako_без_самостоятельной_проверки_ввода.md
