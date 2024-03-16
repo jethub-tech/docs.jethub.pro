@@ -26,7 +26,7 @@
 
 ```python linenums="1"
 # CONFIDENCE = LOW
-@app.route('/bad')
+@app.route("/bad")
 def csv_store_with_writerow_bad(csv_data):
 
     # csv_data input to writerow not sanitized
@@ -41,17 +41,17 @@ def csv_store_with_writerow_bad(csv_data):
 def csv_store_with_numpy_bad(data_np_array):
 
     # this is considered bad as it is from func argument
-    filename = 'data.csv'
-    np.savetxt(filename, data_np_array, delimiter=',', fmt='%s')
+    filename = "data.csv"
+    np.savetxt(filename, data_np_array, delimiter=",", fmt="%s")
 ```
 
 ```python linenums="1"
 # CONFIDENCE = MEDIUM
-@app.route('/bad')
+@app.route("/bad")
 def bad_request():
 
     # csv_data comes from request and not sanitized
-    csv_data = request.args.get('csv')
+    csv_data = request.args.get("csv")
     csvWriter = csv.writer(open("test.csv", "wt"))
     csvWriter.writerow(func(csv_data, sanitize(var1)))
 
@@ -61,7 +61,7 @@ def bad_request():
 ## Пример безопасного использования
 
 ```python linenums="1"
-@app.route('/good')
+@app.route("/good")
 def csv_store_with_writerow_good(csv_data):
 
     # inputs to writerow are wrapped with sanitize
@@ -75,8 +75,8 @@ def csv_store_with_writerow_good(csv_data):
 def csv_store_with_numpy_good(data_np_array):
 
     # this is considered bad as it is from func argument
-    filename = 'data.csv'
-    np.savetxt(filename, verify_input(data_np_array), delimiter=',', fmt='%s')
+    filename = "data.csv"
+    np.savetxt(filename, verify_input(data_np_array), delimiter=",", fmt="%s")
 ```
 
 ```python linenums="1"
