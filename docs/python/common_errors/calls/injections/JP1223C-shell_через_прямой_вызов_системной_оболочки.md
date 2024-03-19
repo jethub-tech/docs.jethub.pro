@@ -31,6 +31,8 @@ def your_echo(input: str):
 * `popen2.Popen4`
 * `commands.getoutput`
 * `commands.getstatusoutput`
+* `subprocess.getoutput`
+* `subprocess.getstatusoutput`
 
 ## Дополнительная информация
 
