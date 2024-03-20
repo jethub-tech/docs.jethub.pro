@@ -4,6 +4,7 @@ copyright: © 2022 - с.г. jethub.pro
 
 theme:
   name: material
+  custom_dir: docs/overrides
 
   static_templates:
     - 404.html
@@ -17,6 +18,8 @@ theme:
 
   language: ru
   features:
+    # - announce.dismiss
+
     - content.code.annotate
     - content.code.copy
     - content.action.edit
