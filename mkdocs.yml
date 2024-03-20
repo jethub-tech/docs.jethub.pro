@@ -17,8 +17,6 @@ theme:
 
   language: ru
   features:
-    - announce.dismiss
-
     - content.code.annotate
     - content.code.copy
     - content.action.edit
