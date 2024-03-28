@@ -28,7 +28,7 @@ _TODO: добавить диаграмму_
 
         _TODO: добавить код с обновленными doc-string_
         ```python linenums="1"
-        --8<-- "jethub_client_app_example.py"
+        --8<-- "docs/assets/example_jethub_client_app.py"
         ```
 
 - Аргументы
