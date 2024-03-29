@@ -2,28 +2,36 @@
 
 ``` mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
+flowchart TB
     subgraph CLIENT [Пользователь]
         style CLIENT color:#fff
-        direction TB
+        direction RL
 
-        token([токен])
-        style token color:#fff
+        subgraph JETHUB_client_app[jethub_client_app.py]
+            style JETHUB_client_app color:#fff
+        
+            client_token([CLIENT_TOKEN])
+            style client_token color:#fff
 
-        path([ файл или папка ])
+            JETHUB_api([API_PATH])
+            style JETHUB_api color:#fff
+        end
+
+        path([файл или папка])
         style path color:#fff
 
+        path --> JETHUB_client_app
 
     end
 
-    subgraph JETHUB_API [JetHub API]
-        style JETHUB_API color:#fff
+    subgraph JETHUB [JetHub]
+        style JETHUB color:#fff
         direction LR
 
         identification([идентификация])
         style identification color:#fff
 
-        analizator([анализатор])
+        analizator([статический анализатор])
         style analizator color:#fff
 
         post_processing([постобработка])
@@ -38,7 +46,7 @@ flowchart LR
 
     end
 
-    CLIENT <---> JETHUB_API
+    CLIENT <--> JETHUB
 ```
 
 ## **Интеграция**
@@ -52,7 +60,7 @@ flowchart LR
 
 Предоставляется отдельно.
 
-Стоит отметить, что токен указывается внутри кода (ниже пример), но ничего не мешает вынести как аргументом в командную строку.
+> Токен указывается внутри кода (ниже пример), но по надобности можно вынести как аргументом в командную строку.
 
 ### **Приложение** (на python3)
 
@@ -66,9 +74,9 @@ flowchart LR
 
     Для быстрого доступа к системе предлагается использоват следующий python код.
 
+    ^^==TODO: добавить код с обновленными doc-string==^^
     ??? quote "`jethub_client_app.py`"
 
-        _TODO: добавить код с обновленными doc-string_
         ```python linenums="1"
         --8<-- "docs/assets/example_jethub_client_app.py"
         ```
@@ -83,11 +91,15 @@ flowchart LR
     ```
 
     ``` bash
-    python3 jethub_client_app.py -p ./code2analize.py
+    python3 jethub_client_app.py -p ./my_python_code.py
     ```
 
-## **Пример отчёта**
+## **`jethub_report.json`**
 ----
+
+Весь перечень ошибок (пока для python) можно посмотреть во [вкладке «Python»](https://docs.jethub.pro/python/).
+
+## Пример отчёта
 
 ``` json linenums="1" title="jethub_report.json"
 {
@@ -97,7 +109,7 @@ flowchart LR
             "reason": "syntax error while parsing AST from file"
         }
     ],
-    "generated_at": "2024-02-02T18:36:52Z",
+    "generated_at": "2024-03-08T18:36:52Z",
     "results": [
         {
             "code": "1 import pandas as pd\n2 from fastapi import *\n3",
