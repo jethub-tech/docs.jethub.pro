@@ -1,6 +1,45 @@
 # Главная
 
-_TODO: добавить диаграмму_
+``` mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    subgraph CLIENT [Клиент]
+        style CLIENT color:#fff
+        direction TB
+
+        token([токен])
+        style token color:#fff
+
+        path([ файл или папка ])
+        style path color:#fff
+
+
+    end
+
+    subgraph JETHUB_API [JetHub API]
+        style JETHUB_API color:#fff
+        direction LR
+
+        identification([идентификация])
+        style identification color:#fff
+
+        analizator([анализатор])
+        style analizator color:#fff
+
+        post_processing([постобрабока])
+        style post_processing color:#fff
+
+        report([jethub_report.json])
+        style report color:#fff
+
+        identification -.-> analizator
+        analizator -.-> post_processing
+        post_processing -.-> report
+
+    end
+
+    CLIENT <---> JETHUB_API
+```
 
 ## **Интеграция**
 ----
@@ -59,13 +98,41 @@ _TODO: добавить диаграмму_
             "reason": "syntax error while parsing AST from file"
         }
     ],
-    "generated_at": "2024-03-03T17:36:52Z",
+    "generated_at": "2024-02-02T18:36:52Z",
     "results": [
         {
-
+            "code": "1 import pandas as pd\n2 from fastapi import *\n3",
+            "col_offset": 0,
+            "end_col_offset": 21,
+            "filename": "example_src/example_main.py",
+            "issue_confidence": "HIGH",
+            "issue_severity": "HIGH",
+            "line_number": 2,
+            "line_range": [
+                2
+            ],
+            "problem_cwe_id": 1061,
+            "problem_cwe_link": "https://cwe.mitre.org/data/definitions/1061.html",
+            "problem_id": "JP0847B",
+            "test_name": "blacklist",
+            "link_to_doc": "https://docs.jethub.pro/python/special/import/JP0847B-import_all"
         },
         {
-
+            "code": "9 \n10 os.execl(path, arg0, arg1)\n",
+            "col_offset": 0,
+            "end_col_offset": 26,
+            "filename": "example_src/example_utils.py",
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "line_number": 10,
+            "line_range": [
+                10
+            ],
+            "problem_cwe_id": 78,
+            "problem_cwe_link": "https://cwe.mitre.org/data/definitions/78.html",
+            "problem_id": "JP1225C",
+            "test_name": "start_process_with_no_shell",
+            "link_to_doc": "https://docs.jethub.pro/python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell"
         }
     ]
 }
