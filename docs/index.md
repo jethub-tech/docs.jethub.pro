@@ -26,7 +26,7 @@ flowchart LR
         analizator([анализатор])
         style analizator color:#fff
 
-        post_processing([постобрабока])
+        post_processing([постобработка])
         style post_processing color:#fff
 
         report([jethub_report.json])
@@ -58,7 +58,6 @@ flowchart LR
 
 - Установка нужных зависимостей
 
-    _TODO: дописать названия библиотек и их версии_
     ``` bash
     pip install click==8.1.7 requests==2.31.0
     ```
