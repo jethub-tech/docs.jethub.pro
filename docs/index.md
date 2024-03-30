@@ -9,7 +9,7 @@ flowchart TB
 
         subgraph JETHUB_client_app[jethub_client_app.py]
             style JETHUB_client_app color:#fff
-        
+
             client_token([CLIENT_TOKEN])
             style client_token color:#fff
 
