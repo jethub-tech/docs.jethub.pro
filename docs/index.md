@@ -74,7 +74,6 @@ flowchart TB
 
     Для быстрого доступа к системе предлагается использоват следующий python код.
 
-    ^^==TODO: добавить код с обновленными doc-string==^^
     ??? quote "`jethub_client_app.py`"
 
         ```python linenums="1"
@@ -99,7 +98,7 @@ flowchart TB
 
 Весь перечень ошибок (пока для python) можно посмотреть во [вкладке «Python»](https://docs.jethub.pro/python/).
 
-## Пример отчёта
+### Пример отчёта
 
 ``` json linenums="1" title="jethub_report.json"
 {
