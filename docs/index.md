@@ -77,7 +77,7 @@ flowchart TB
     ??? quote "`jethub_client_app.py`"
 
         ```python linenums="1"
-        --8<-- "docs/assets/example_jethub_client_app.py"
+        --8<-- "./docs/assets/example_jethub_client_app.py"
         ```
 
 - Аргументы
