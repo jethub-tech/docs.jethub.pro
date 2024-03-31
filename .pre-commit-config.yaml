@@ -53,10 +53,10 @@ repos:
   #   hooks:
   #     - id: mypy
 
-  - repo: https://github.com/ComPWA/mirrors-pyright
-    rev: v1.1.356
-    hooks:
-      - id: pyright
+  # - repo: https://github.com/ComPWA/mirrors-pyright
+  #   rev: v1.1.356
+  #   hooks:
+  #     - id: pyright
 
   # - repo: https://github.com/hcodes/yaspeller.git
   #   rev: v10.0.1
