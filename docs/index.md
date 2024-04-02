@@ -28,7 +28,7 @@ flowchart TB
         style JETHUB color:#fff
         direction LR
 
-        identification([идентификация])
+        identification([идентификация пользователя])
         style identification color:#fff
 
         analizator([статический анализатор])
@@ -54,16 +54,15 @@ flowchart TB
 
 ### **`API_PATH`**
 
-URL эндпоинта предоставляется отдельно. 
+URL «endpoint» предоставляется отдельно.
 
-> URL указывается в клиентском приложении jethub_client_app.py как переменная API_PATH.
+> URL указывается в клиентском приложении `jethub_client_app.py` как переменная `API_PATH`.
 
 ### **`CLIENT_TOKEN`**
 
 Уникальный токен клиента предоставляется отдельно.
 
-> Токен указывается в клиентском приложении jethub_client_app.py как переменная CLIENT_TOKEN. 
-> Также он может быть передан приложению в качестве аргумента при запуске через командную строку.
+> Токен указывается в клиентском приложении `jethub_client_app.py` как переменная `CLIENT_TOKEN`. 
 
 ### **Приложение** (на python3)
 
