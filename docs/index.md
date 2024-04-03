@@ -1,8 +1,14 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Главная
 
 ``` mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart TB
+flowchart LR
     subgraph CLIENT [Пользователь]
         style CLIENT color:#fff
         direction RL
