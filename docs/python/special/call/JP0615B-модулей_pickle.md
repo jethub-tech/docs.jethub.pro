@@ -27,3 +27,4 @@
 ## Дополнительная информация
 
 * <https://docs.python.org/3/library/pickle.html>
+* <https://lwn.net/Articles/964392/>
