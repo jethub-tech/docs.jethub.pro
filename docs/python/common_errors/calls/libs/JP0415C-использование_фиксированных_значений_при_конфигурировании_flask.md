@@ -28,6 +28,8 @@ app.run(debug=False)
 app.config.update(DEBUG=True)
 app.config.update(TESTING=True)
 app.config.update(SECRET_KEY="aaaa")
+# OK - no hardcoded value
+app.config.update(TESTING=os.getenv("TESTING"))
 ```
 
 ```bash
