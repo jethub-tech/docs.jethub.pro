@@ -109,7 +109,7 @@ def wait_results(taskid: str) -> dict:
 
 def write_results(data: dict, out_file: str):
     with open(out_file, "w") as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
 
 @click.command(context_settings={"ignore_unknown_options": True})
