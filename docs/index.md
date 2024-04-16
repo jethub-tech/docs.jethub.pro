@@ -94,11 +94,11 @@ flowchart LR
     - `-o` – путь выходного отчёта (по-умолчанию `jethub_report.json`)
 
     ``` bash
-    python3 jethub_client_app.py -p ./src/core -o my_name_report.json
+    python3 jethub_client_app.py -p src/core -o my_name_report.json
     ```
 
     ``` bash
-    python3 jethub_client_app.py -p ./my_python_code.py
+    python3 jethub_client_app.py -p my_python_code.py
     ```
 
 ## **`jethub_report.json`**
