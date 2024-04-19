@@ -134,4 +134,3 @@ def main(path: str, out_file: str):
 
 if __name__ == "__main__":
     main()
-    
