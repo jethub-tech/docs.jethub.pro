@@ -35,7 +35,7 @@ def create_task(path: str) -> str:
     transfer = "archive.zip"
     if Path(path).is_file():
         # Create archive from 1 file
-        zipfile.ZipFile("archive.zip", "w", zipfile.ZIP_DEFLATED).write(path, Path(path).stem)
+        zipfile.ZipFile("archive.zip", "w", zipfile.ZIP_DEFLATED).write(path, Path(path))
     else:
         # Create archive from directory
         transfer = shutil.make_archive("archive", "zip", path)
@@ -50,6 +50,8 @@ def create_task(path: str) -> str:
         headers={"Authorization": f"Bearer {CLIENT_TOKEN}"},
         timeout=30,
     )
+
+    Path("archive.zip").unlink()
 
     # Check the API response
     if r.status_code == 200:
@@ -109,7 +111,7 @@ def wait_results(taskid: str) -> dict:
 
 def write_results(data: dict, out_file: str):
     with open(out_file, "w") as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
 
 @click.command(context_settings={"ignore_unknown_options": True})
