@@ -6,7 +6,7 @@
 
 ----
 
-Использование библиотеки `requests, httpx, httplib2, urllib3` с `verify=False`,`disable_ssl_certificate_validation=False, urllib3.disable_warnings()` отключает валидацию SSL сертификатов протокола HTTPS, что небезопасно при подключении к серверу вне тестовой среды.
+Использование библиотеки `requests`, `httpx`, `httplib2`, `urllib3` с `verify=False`,`disable_ssl_certificate_validation=False, urllib3.disable_warnings()` отключает валидацию SSL сертификатов протокола HTTPS, что небезопасно при подключении к серверу вне тестовой среды.
 
 ## Пример небезопасного использования
 
