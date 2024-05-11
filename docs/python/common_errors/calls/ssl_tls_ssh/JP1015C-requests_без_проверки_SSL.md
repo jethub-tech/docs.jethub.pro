@@ -13,7 +13,28 @@
 ```python linenums="1"
 import requests
 
-requests.get("https://example.com", verify=False)
+requests.get("https://example.com", timeout=30, verify=False)
+requests.post('https://gmail.com', timeout=30, verify=False)
+requests.put('https://gmail.com', timeout=30, verify=False)
+requests.delete('https://gmail.com', timeout=30, verify=False)
+requests.patch('https://gmail.com', timeout=30, verify=False)
+requests.options('https://gmail.com', timeout=30, verify=False)
+requests.head('https://gmail.com', timeout=30, verify=False)
+
+import httpx
+httpx.get("https://example.com", timeout=30, verify=False)
+httpx.post('https://gmail.com', timeout=30, verify=False)
+httpx.put('https://gmail.com', timeout=30, verify=False)
+httpx.delete('https://gmail.com', timeout=30, verify=False)
+httpx.patch('https://gmail.com', timeout=30, verify=False)
+httpx.options('https://gmail.com', timeout=30, verify=False)
+httpx.head('https://gmail.com', timeout=30, verify=False)
+httpx.Client(verify=False)
+httpx.AsyncClient(verify=False)
+
+import httplib2
+h = httplib2.Http(".cache", disable_ssl_certificate_validation=True)
+resp, content = h.request("https://github.com/", "POST")
 ```
 
 ## Дополнительная информация
