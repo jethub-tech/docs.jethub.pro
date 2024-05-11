@@ -142,7 +142,8 @@ nav:
             - python/common_errors/calls/injections/JP1235C-shell_вызов_django_rawSQL.md
           - Библиотеки:
               - python/common_errors/calls/libs/JP0239C-использование_requests_без_таймаута.md
-              - python/common_errors/calls/libs/JP0415C-использование_flask_в_режиме_отладки.md
+              - python/common_errors/calls/libs/JP0415C-использование_фиксированных_значений_при_конфигурировании_flask.md
+              - python/common_errors/calls/libs/JP0421AC-использование_фиксированных_значений_для_режима_отладки.md
               - python/common_errors/calls/libs/JP0417C-tarfile_без_проверки_содержимого.md
               - python/common_errors/calls/libs/JP1025C-yaml_load.md
               - python/common_errors/calls/libs/JP1029C-устаревшая_версия_SNMP.md
@@ -174,6 +175,7 @@ nav:
           - python/common_errors/string/JP0221S-привязка_к_адресу_все_интерфейсы.md
           - python/common_errors/string/JP0223S-использование_фиксированных_строк_для_переменных_секретов.md
           - python/common_errors/string/JP0229S-использование_временных_tmp_файлов_директорий.md
+          - python/common_errors/string/JP0419S-использование_фиксированных_значений_при_конфигурировании_flask.md
           - python/common_errors/string/JP1229S-SQL_инъекция.md
     - Специальные:
       - Класс «Вызов Функции из списка blacklist»:
