@@ -23,12 +23,12 @@ requests.head('https://gmail.com', timeout=30, verify=False)
 
 import httpx
 httpx.get("https://example.com", timeout=30, verify=False)
-httpx.post('https://gmail.com', timeout=30, verify=False)
-httpx.put('https://gmail.com', timeout=30, verify=False)
-httpx.delete('https://gmail.com', timeout=30, verify=False)
-httpx.patch('https://gmail.com', timeout=30, verify=False)
-httpx.options('https://gmail.com', timeout=30, verify=False)
-httpx.head('https://gmail.com', timeout=30, verify=False)
+httpx.post("https://gmail.com", timeout=30, verify=False)
+httpx.put("https://gmail.com", timeout=30, verify=False)
+httpx.delete("https://gmail.com", timeout=30, verify=False)
+httpx.patch("https://gmail.com", timeout=30, verify=False)
+httpx.options("https://gmail.com", timeout=30, verify=False)
+httpx.head("https://gmail.com", timeout=30, verify=False)
 httpx.Client(verify=False)
 httpx.AsyncClient(verify=False)
 
