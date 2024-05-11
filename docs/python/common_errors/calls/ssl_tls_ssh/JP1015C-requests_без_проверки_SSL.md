@@ -14,12 +14,12 @@
 import requests
 
 requests.get("https://example.com", timeout=30, verify=False)
-requests.post('https://gmail.com', timeout=30, verify=False)
-requests.put('https://gmail.com', timeout=30, verify=False)
-requests.delete('https://gmail.com', timeout=30, verify=False)
-requests.patch('https://gmail.com', timeout=30, verify=False)
-requests.options('https://gmail.com', timeout=30, verify=False)
-requests.head('https://gmail.com', timeout=30, verify=False)
+requests.post("https://gmail.com", timeout=30, verify=False)
+requests.put("https://gmail.com", timeout=30, verify=False)
+requests.delete("https://gmail.com", timeout=30, verify=False)
+requests.patch("https://gmail.com", timeout=30, verify=False)
+requests.options("https://gmail.com", timeout=30, verify=False)
+requests.head("https://gmail.com", timeout=30, verify=False)
 
 import httpx
 httpx.get("https://example.com", timeout=30, verify=False)
