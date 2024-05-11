@@ -6,7 +6,8 @@
 
 ----
 
-Использование библиотеки `requests, httpx, httplib2` требует использования флага `verify=True` или `disable_ssl_certificate_validation=True` для валидации SSL сертификатов протокола HTTPS при подключении к серверу вне тестовой среды.
+Использование библиотеки `requests, httpx, httplib2, urllib3` с `verify=False`,`disable_ssl_certificate_validation=False, urllib3.disable_warnings()`
+отключает валидацию SSL сертификатов протокола HTTPS, что небезопасно при подключении к серверу вне тестовой среды.
 
 ## Пример небезопасного использования
 
@@ -35,6 +36,9 @@ httpx.AsyncClient(verify=False)
 import httplib2
 h = httplib2.Http(".cache", disable_ssl_certificate_validation=True)
 resp, content = h.request("https://github.com/", "POST")
+
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 ```
 
 ## Дополнительная информация
