@@ -15,7 +15,7 @@
 from urllib.request import urlopen
 import ssl
 
-response = urlopen('https://example.org', context=ssl._create_unverified_context())
+response = urlopen("https://example.org", context=ssl._create_unverified_context())
 
 
 import http.client
@@ -32,6 +32,7 @@ import ssl
 context = ssl._create_unverified_context()
 conn = httplib.HTTPSConnection("example.com", context=context)
 conn.request("GET", "/")
+```
 
 ## Дополнительная информация
 
