@@ -8,7 +8,7 @@
 
 Принудительное использование `ssl._create_unverified_context` небезопасно, так как избегает валидации сертификатов и проверки хостов.
 Модуль `ssl` используется такими модулями python для работы с http соединениями как `http.client`, `httplib` или `urllib2`
-## Список вызовов
+## Пример небезопасного использования
 
 ```python linenums="1"
 from urllib.request import urlopen
