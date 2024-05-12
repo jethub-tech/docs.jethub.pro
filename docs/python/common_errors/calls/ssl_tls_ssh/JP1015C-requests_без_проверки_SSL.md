@@ -6,7 +6,7 @@
 
 ----
 
-Использование библиотеки `requests, httpx, httplib2, urllib3` с `verify=False`,`disable_ssl_certificate_validation=False, urllib3.disable_warnings()` отключает валидацию SSL сертификатов протокола HTTPS, что небезопасно при подключении к серверу вне тестовой среды.
+Использование библиотеки `requests`, `httpx`, `httplib2`, `urllib3` с `verify=False`,`disable_ssl_certificate_validation=False, urllib3.disable_warnings()` отключает валидацию SSL сертификатов протокола HTTPS, что небезопасно при подключении к серверу вне тестовой среды.
 
 ## Пример небезопасного использования
 
@@ -14,21 +14,21 @@
 import requests
 
 requests.get("https://example.com", timeout=30, verify=False)
-requests.post('https://gmail.com', timeout=30, verify=False)
-requests.put('https://gmail.com', timeout=30, verify=False)
-requests.delete('https://gmail.com', timeout=30, verify=False)
-requests.patch('https://gmail.com', timeout=30, verify=False)
-requests.options('https://gmail.com', timeout=30, verify=False)
-requests.head('https://gmail.com', timeout=30, verify=False)
+requests.post("https://gmail.com", timeout=30, verify=False)
+requests.put("https://gmail.com", timeout=30, verify=False)
+requests.delete("https://gmail.com", timeout=30, verify=False)
+requests.patch("https://gmail.com", timeout=30, verify=False)
+requests.options("https://gmail.com", timeout=30, verify=False)
+requests.head("https://gmail.com", timeout=30, verify=False)
 
 import httpx
 httpx.get("https://example.com", timeout=30, verify=False)
-httpx.post('https://gmail.com', timeout=30, verify=False)
-httpx.put('https://gmail.com', timeout=30, verify=False)
-httpx.delete('https://gmail.com', timeout=30, verify=False)
-httpx.patch('https://gmail.com', timeout=30, verify=False)
-httpx.options('https://gmail.com', timeout=30, verify=False)
-httpx.head('https://gmail.com', timeout=30, verify=False)
+httpx.post("https://gmail.com", timeout=30, verify=False)
+httpx.put("https://gmail.com", timeout=30, verify=False)
+httpx.delete("https://gmail.com", timeout=30, verify=False)
+httpx.patch("https://gmail.com", timeout=30, verify=False)
+httpx.options("https://gmail.com", timeout=30, verify=False)
+httpx.head("https://gmail.com", timeout=30, verify=False)
 httpx.Client(verify=False)
 httpx.AsyncClient(verify=False)
 
