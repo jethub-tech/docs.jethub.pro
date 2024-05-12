@@ -33,9 +33,6 @@ context = ssl._create_unverified_context()
 conn = httplib.HTTPSConnection("example.com", context=context)
 conn.request("GET", "/")
 
-
-```
-
 ## Дополнительная информация
 
 * <https://docs.python.org/3/library/http.client.html?highlight=unverified_context>
