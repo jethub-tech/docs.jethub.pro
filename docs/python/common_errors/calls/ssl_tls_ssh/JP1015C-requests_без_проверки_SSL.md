@@ -39,6 +39,7 @@ h = httplib2.Http(".cache", disable_ssl_certificate_validation=True)
 resp, content = h.request("https://github.com/", "POST")
 
 import urllib3
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 ```
 
