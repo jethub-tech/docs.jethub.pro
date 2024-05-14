@@ -17,7 +17,6 @@ import ssl
 
 response = urlopen("https://example.org", context=ssl._create_unverified_context())
 
-
 import http.client
 import ssl
 
