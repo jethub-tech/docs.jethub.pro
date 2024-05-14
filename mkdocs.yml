@@ -155,7 +155,7 @@ nav:
               - python/common_errors/calls/libs/JP1417C-mako_без_самостоятельной_проверки_ввода.md
               - python/common_errors/calls/libs/JP1419C-django_mark_safe.md
           - Протоколы SSL-TLS-SSH:
-            - python/common_errors/calls/ssl_tls_ssh/JP1015C-requests_без_проверки_SSL.md
+            - python/common_errors/calls/ssl_tls_ssh/JP1015C-requests_httpx_httplib2_без_проверки_SSL.md
             - python/common_errors/calls/ssl_tls_ssh/JP1017C-вызов_функции_устаревшие_TLS_SSL_параметры.md
             - python/common_errors/calls/ssl_tls_ssh/JP1021C-вызов_функции_SSL_без_указания_TLS_SSL_параметра.md
             - python/common_errors/calls/ssl_tls_ssh/JP1027C-paramiko_для_SSH_без_проверки_ключа.md
