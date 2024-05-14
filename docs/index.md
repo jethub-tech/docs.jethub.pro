@@ -84,7 +84,7 @@ flowchart LR
 
 - Установка нужных зависимостей
 
-    ``` bash
+    ```bash
     pip install click==8.1.7 requests==2.31.0
     ```
 
@@ -103,11 +103,11 @@ flowchart LR
     - `-p` – путь к файлу или папке
     - `-o` – путь выходного отчёта (по-умолчанию `jethub_report.json`)
 
-    ``` bash
+    ```bash
     python3 jethub_client_app.py -p src/core -o my_name_report.json
     ```
 
-    ``` bash
+    ```bash
     python3 jethub_client_app.py -p my_python_code.py
     ```
 
@@ -118,7 +118,7 @@ flowchart LR
 
 ### Пример отчёта
 
-``` json linenums="1" title="jethub_report.json"
+```json linenums="1" title="jethub_report.json"
 {
     "errors": [
         {
