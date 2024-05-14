@@ -6,7 +6,7 @@ hide:
 
 # Главная
 
-``` mermaid
+```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart LR
     subgraph CLIENT [Пользователь]
@@ -37,8 +37,17 @@ flowchart LR
         identification([идентификация пользователя])
         style identification color:#fff
 
-        analizator([статический анализатор])
-        style analizator color:#fff
+        subgraph JETHUB_tools[Инструменты]
+            style JETHUB_tools color:#fff
+            direction LR
+
+            analizator([статический анализатор])
+            style analizator color:#fff
+
+            data_leaks([утечка данных])
+            style data_leaks color:#fff
+
+        end
 
         post_processing([постобработка])
         style post_processing color:#fff
@@ -46,8 +55,9 @@ flowchart LR
         report([jethub_report.json])
         style report color:#fff
 
-        identification -.-> analizator
-        analizator -.-> post_processing
+        identification -.-> JETHUB_tools
+        
+        JETHUB_tools -.-> post_processing
         post_processing -.-> report
 
     end
