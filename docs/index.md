@@ -122,7 +122,7 @@ flowchart LR
 {
     "errors": [
         {
-            "filename": "example_dir/Makefile.py",
+            "filename": "core/format.py",
             "reason": "syntax error while parsing AST from file"
         }
     ],
