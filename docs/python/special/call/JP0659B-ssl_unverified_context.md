@@ -24,7 +24,6 @@ context = ssl._create_unverified_context()
 conn = http.client.HTTPSConnection("example.com", context=context)
 conn.request("GET", "/")
 
-
 import httplib
 import ssl
 
