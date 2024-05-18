@@ -56,7 +56,7 @@ flowchart LR
         style report color:#fff
 
         identification -.-> JETHUB_tools
-        
+
         JETHUB_tools -.-> post_processing
         post_processing -.-> report
 
@@ -120,48 +120,57 @@ flowchart LR
 
 ```json linenums="1" title="jethub_report.json"
 {
-    "errors": [
-        {
-            "filename": "core/format.py",
-            "reason": "syntax error while parsing AST from file"
-        }
-    ],
-    "generated_at": "2024-03-08T18:36:52Z",
-    "results": [
-        {
-            "code": "1 import pandas as pd\n2 from fastapi import *\n3",
-            "col_offset": 0,
-            "end_col_offset": 21,
-            "filename": "src/main.py",
-            "issue_confidence": "HIGH",
-            "issue_severity": "HIGH",
-            "line_number": 2,
-            "line_range": [
-                2
-            ],
-            "problem_cwe_id": 1061,
-            "problem_cwe_link": "https://cwe.mitre.org/data/definitions/1061.html",
-            "problem_id": "JP0847B",
-            "test_name": "blacklist",
-            "link_to_doc": "https://docs.jethub.pro/python/special/import/JP0847B-import_all"
-        },
-        {
-            "code": "9 \n10 os.execl(path, arg0, arg1)\n",
-            "col_offset": 0,
-            "end_col_offset": 26,
-            "filename": "src/utils.py",
-            "issue_confidence": "MEDIUM",
-            "issue_severity": "LOW",
-            "line_number": 10,
-            "line_range": [
-                10
-            ],
-            "problem_cwe_id": 78,
-            "problem_cwe_link": "https://cwe.mitre.org/data/definitions/78.html",
-            "problem_id": "JP1225C",
-            "test_name": "start_process_with_no_shell",
-            "link_to_doc": "https://docs.jethub.pro/python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell"
-        }
-    ]
+    "code": 200,
+    "msg": "Success response",
+    "data": {
+        "sast_python": [
+            {
+                "id": "JP0847B",
+                "test_name": "blacklist",
+                "filename": "src/main.py",
+                "code": "1 import pandas as pd\n2 from fastapi import *\n3",
+                "line_number": 2,
+                "line_range": [
+                    2
+                ],
+                "col_offset": 0,
+                "end_col_offset": 21,
+                "severity": "HIGH",
+                "confidence": "HIGH",
+                "cwe_id": 1061,
+                "cwe_link": "https://cwe.mitre.org/data/definitions/1061.html",
+                "link_to_doc": "https://docs.jethub.pro/python/special/import/JP0847B-import_all"
+            },
+            {
+                "id": "JP1225C",
+                "test_name": "start_process_with_no_shell",
+                "filename": "src/utils.py",
+                "code": "9 \n10 os.execl(path, arg0, arg1)\n",
+                "line_number": 10,
+                "line_range": [
+                    10
+                ],  
+                "col_offset": 0,
+                "end_col_offset": 26,
+                "severity": "LOW",  
+                "confidence": "MEDIUM",
+                "cwe_id": 78,
+                "cwe_link": "https://cwe.mitre.org/data/definitions/78.html",
+                "link_to_doc": "https://docs.jethub.pro/python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell"
+            }
+        ],
+        "data_leaks": [
+            {
+                "path": "src/structure.py",
+                "line": 10,
+                "code": "AKIAQYLPMN5HHHFPZAM2"
+            },
+            {
+                "path": "src/code/main.go",
+                "line": 4,
+                "code": "***the-internet.herokuapp.com"
+            }
+        ]
+    }
 }
 ```
