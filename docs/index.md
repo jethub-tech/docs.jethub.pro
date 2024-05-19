@@ -127,9 +127,9 @@ flowchart LR
             {
                 "id": "JP0847B",
                 "test_name": "blacklist",
-                "filename": "src/main.py",
+                "path": "src/main.py",
                 "code": "1 import pandas as pd\n2 from fastapi import *\n3",
-                "line_number": 2,
+                "line": 2,
                 "line_range": [
                     2
                 ],
@@ -144,9 +144,9 @@ flowchart LR
             {
                 "id": "JP1225C",
                 "test_name": "start_process_with_no_shell",
-                "filename": "src/utils.py",
+                "path": "src/utils.py",
                 "code": "9 \n10 os.execl(path, arg0, arg1)\n",
-                "line_number": 10,
+                "line": 10,
                 "line_range": [
                     10
                 ],  
