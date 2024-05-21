@@ -159,6 +159,7 @@ nav:
             - python/common_errors/calls/ssl_tls_ssh/JP1017C-вызов_функции_устаревшие_TLS_SSL_параметры.md
             - python/common_errors/calls/ssl_tls_ssh/JP1021C-вызов_функции_SSL_без_указания_TLS_SSL_параметра.md
             - python/common_errors/calls/ssl_tls_ssh/JP1027C-paramiko_для_SSH_без_проверки_ключа.md
+          - python/common_errors/calls/JP0215A-использование_assert.md
           - python/common_errors/calls/JP0217C-выполнение_кода_через_exec.md
           - python/common_errors/calls/JP0219C-изменение_параметров_доступа_через_os_chmod.md
           - python/common_errors/calls/JP0225С-использование_фиксированных_строк_для_секретов_при_вызове_функций.md
