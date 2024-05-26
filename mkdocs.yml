@@ -128,7 +128,6 @@ nav:
   - Python:
     - python/index.md
     - Общие:
-      # - python/common_errors/error_test.md
       - Класс «Вызов Функции»:
           - Инъекции:
             - python/common_errors/calls/injections/JP1215C-shell_использование_paramiko.md
@@ -216,3 +215,5 @@ nav:
           - python/special/import/JP0839B-crypto.md
           - python/special/import/JP0843B-pyghmi.md
           - python/special/import/JP0847B-import_all.md
+  - Утечка данных:
+    - data_leaks/index.md

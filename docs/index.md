@@ -6,7 +6,7 @@ hide:
 
 # Главная
 
-``` mermaid
+```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart LR
     subgraph CLIENT [Пользователь]
@@ -37,8 +37,17 @@ flowchart LR
         identification([идентификация пользователя])
         style identification color:#fff
 
-        analizator([статический анализатор])
-        style analizator color:#fff
+        subgraph JETHUB_tools[Инструменты]
+            style JETHUB_tools color:#fff
+            direction LR
+
+            analizator([статический анализатор])
+            style analizator color:#fff
+
+            data_leaks([утечка данных])
+            style data_leaks color:#fff
+
+        end
 
         post_processing([постобработка])
         style post_processing color:#fff
@@ -46,8 +55,9 @@ flowchart LR
         report([jethub_report.json])
         style report color:#fff
 
-        identification -.-> analizator
-        analizator -.-> post_processing
+        identification -.-> JETHUB_tools
+
+        JETHUB_tools -.-> post_processing
         post_processing -.-> report
 
     end
@@ -74,7 +84,7 @@ flowchart LR
 
 - Установка нужных зависимостей
 
-    ``` bash
+    ```bash
     pip install click==8.1.7 requests==2.31.0
     ```
 
@@ -90,14 +100,14 @@ flowchart LR
 
 - Аргументы
 
-    - `-p` – путь к файлу или папке
-    - `-o` – путь выходного отчёта (по-умолчанию `jethub_report.json`)
+    - `--path` (`-p`) – путь к файлу или папке
+    - `--out_file` (`-o`) – путь выходного отчёта (по-умолчанию `jethub_report.json`)
 
-    ``` bash
+    ```bash
     python3 jethub_client_app.py -p src/core -o my_name_report.json
     ```
 
-    ``` bash
+    ```bash
     python3 jethub_client_app.py -p my_python_code.py
     ```
 
@@ -108,50 +118,59 @@ flowchart LR
 
 ### Пример отчёта
 
-``` json linenums="1" title="jethub_report.json"
+```json linenums="1" title="jethub_report.json"
 {
-    "errors": [
-        {
-            "filename": "example_dir/Makefile.py",
-            "reason": "syntax error while parsing AST from file"
-        }
-    ],
-    "generated_at": "2024-03-08T18:36:52Z",
-    "results": [
-        {
-            "code": "1 import pandas as pd\n2 from fastapi import *\n3",
-            "col_offset": 0,
-            "end_col_offset": 21,
-            "filename": "example_src/example_main.py",
-            "issue_confidence": "HIGH",
-            "issue_severity": "HIGH",
-            "line_number": 2,
-            "line_range": [
-                2
-            ],
-            "problem_cwe_id": 1061,
-            "problem_cwe_link": "https://cwe.mitre.org/data/definitions/1061.html",
-            "problem_id": "JP0847B",
-            "test_name": "blacklist",
-            "link_to_doc": "https://docs.jethub.pro/python/special/import/JP0847B-import_all"
-        },
-        {
-            "code": "9 \n10 os.execl(path, arg0, arg1)\n",
-            "col_offset": 0,
-            "end_col_offset": 26,
-            "filename": "example_src/example_utils.py",
-            "issue_confidence": "MEDIUM",
-            "issue_severity": "LOW",
-            "line_number": 10,
-            "line_range": [
-                10
-            ],
-            "problem_cwe_id": 78,
-            "problem_cwe_link": "https://cwe.mitre.org/data/definitions/78.html",
-            "problem_id": "JP1225C",
-            "test_name": "start_process_with_no_shell",
-            "link_to_doc": "https://docs.jethub.pro/python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell"
-        }
-    ]
+    "code": 200,
+    "msg": "Success response",
+    "data": {
+        "sast_python": [
+            {
+                "id": "JP0847B",
+                "test_name": "blacklist",
+                "path": "src/main.py",
+                "code": "1 import pandas as pd\n2 from fastapi import *\n3",
+                "line": 2,
+                "line_range": [
+                    2
+                ],
+                "col_offset": 0,
+                "end_col_offset": 21,
+                "severity": "HIGH",
+                "confidence": "HIGH",
+                "cwe_id": 1061,
+                "cwe_link": "https://cwe.mitre.org/data/definitions/1061.html",
+                "link_to_doc": "https://docs.jethub.pro/python/special/import/JP0847B-import_all"
+            },
+            {
+                "id": "JP1225C",
+                "test_name": "start_process_with_no_shell",
+                "path": "src/utils.py",
+                "code": "9 \n10 os.execl(path, arg0, arg1)\n",
+                "line": 10,
+                "line_range": [
+                    10
+                ],  
+                "col_offset": 0,
+                "end_col_offset": 26,
+                "severity": "LOW",  
+                "confidence": "MEDIUM",
+                "cwe_id": 78,
+                "cwe_link": "https://cwe.mitre.org/data/definitions/78.html",
+                "link_to_doc": "https://docs.jethub.pro/python/common_errors/calls/injections/JP1225C-создание_процесса_через_os_без_shell"
+            }
+        ],
+        "data_leaks": [
+            {
+                "path": "src/structure.py",
+                "line": 10,
+                "code": "AKIAQYLPMN5HHHFPZAM2"
+            },
+            {
+                "path": "src/code/main.go",
+                "line": 4,
+                "code": "***the-internet.herokuapp.com"
+            }
+        ]
+    }
 }
 ```
