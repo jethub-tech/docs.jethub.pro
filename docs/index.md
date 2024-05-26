@@ -92,9 +92,9 @@ flowchart LR
     | -------------------------- | ------------------------------------------ | -------------------- |
     | `--path`                   | Путь файла или папки для анализа           |  –                   |
     | `--out_file`               | Путь-имя выходного отчёта                  | `jethub_report.json` |
-    | `--sast-py-skiptest`       |
+    | `--sast-py-skiptest`       | (Также можно использовать `# nosec`)
     | `--sast-py-exclude-path`   |
-    | `--data-leaks-exlude-path` |
+    | `--data-leaks-exlude-path` | (Также можно использовать `# nosec`)
     | `—-global-exlude-path`     |
 
     **Пример**
