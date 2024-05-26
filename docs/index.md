@@ -100,12 +100,12 @@ flowchart LR
 
 - Аргументы
 
-    - `--path` (`-p`) – путь к файлу или папке
-    - `--out_file` (`-o`) – путь выходного отчёта (по-умолчанию `jethub_report.json`)
-
-    ```bash
-    python3 jethub_client_app.py -p src/core -o my_name_report.json
-    ```
+    | Имя Полное   | Имя краткое | Описание                     | По-умолчанию         |
+    | ------------ | ----------- | ---------------------------- | -------------------- |
+    | `--path`     | `-p`        | Путь к файлу или папке       |  –                   |
+    | `--out_file` | `-o`        | Путь выходного отчёта        | `jethub_report.json` |
+    
+    **Пример**
 
     ```bash
     python3 jethub_client_app.py -p my_python_code.py
