@@ -102,12 +102,10 @@ flowchart LR
     python3 jethub_client_app.py --path src/core/ --sast-python-skiptest JP0817B,JP1219C --data-leaks-exlude-path tests/test_func.py
     ```
 
-## **`jethub_report.json`**
+## Пример отчёта
 ----
 
 Перечень ошибок (в настоящий момент доступен только для python) можно посмотреть во [вкладке «Python»](https://docs.jethub.pro/python/).
-
-### Пример отчёта
 
 ```json linenums="1" title="jethub_report.json"
 {
