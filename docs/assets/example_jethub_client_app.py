@@ -12,7 +12,13 @@ API_PATH = "insert_api_path"
 CLIENT_TOKEN = "insert_your_private_token"
 
 
-def create_task(path: str) -> str:
+def create_task(
+    path: str,
+    sast_python_skiptest: str,
+    sast_python_exclude_path: str,
+    data_leaks_exclude_path: str,
+    global_exclude_path: str,
+) -> str:
     """
     Sends a request to the API to create the task.
 
@@ -49,6 +55,12 @@ def create_task(path: str) -> str:
         files=file,
         headers={"Authorization": f"Bearer {CLIENT_TOKEN}"},
         timeout=30,
+        data={
+            "sast_python_skiptest": sast_python_skiptest,
+            "sast_python_exclude_path": sast_python_exclude_path,
+            "data_leaks_exclude_path": data_leaks_exclude_path,
+            "global_exclude_path": global_exclude_path,
+        },
     )
 
     Path("archive.zip").unlink()
@@ -115,15 +127,28 @@ def write_results(data: dict, out_file: str):
 
 
 @click.command(context_settings={"ignore_unknown_options": True})
-@click.option("--path", "-p", help="Path for transfer to sast", required=True, type=str)
-@click.option("--out_file", "-o", help="Output file name", default="jethub_report.json", type=str)
-def main(path: str, out_file: str):
+@click.option("--path", help="Path for transfer to sast", required=True, type=str)
+@click.option("--out_file", help="Output file name", default="jethub_report.json", type=str)
+@click.option("--sast-python-skiptest", help="Skiptest for sast", type=str)
+@click.option("--sast-python-exclude-path", help="Exclude path for sast", type=str)
+@click.option("--data-leaks-exclude-path", help="Exclude path for data leaks", type=str)
+@click.option("--global-exclude-path", help="Exclude path for global", type=str)
+def main(
+    path: str,
+    out_file: str,
+    sast_python_skiptest: str,
+    sast_python_exclude_path: str,
+    data_leaks_exclude_path: str,
+    global_exclude_path: str,
+) -> None:
     """
     The main function that creates a new task, waits for the result, and writes the result to a file.
     """
 
     # Create a new task
-    taskid = create_task(path)
+    taskid = create_task(
+        path, sast_python_skiptest, sast_python_exclude_path, data_leaks_exclude_path, global_exclude_path
+    )
 
     # Wait for the result of the task
     data = wait_results(taskid)
