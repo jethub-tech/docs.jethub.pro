@@ -51,16 +51,11 @@ def create_task(
 
     # Send the API request
     r = requests.post(
-        API_PATH + "/tasks/create_task",
+        API_PATH
+        + f"/tasks/create_task?sast_python_skiptest={sast_python_skiptest}&sast_python_exclude_path={sast_python_exclude_path}&data_leaks_exclude_path={data_leaks_exclude_path}&global_exclude_path={global_exclude_path}",
         files=file,
         headers={"Authorization": f"Bearer {CLIENT_TOKEN}"},
         timeout=30,
-        data={
-            "sast_python_skiptest": sast_python_skiptest,
-            "sast_python_exclude_path": sast_python_exclude_path,
-            "data_leaks_exclude_path": data_leaks_exclude_path,
-            "global_exclude_path": global_exclude_path,
-        },
     )
 
     Path("archive.zip").unlink()
