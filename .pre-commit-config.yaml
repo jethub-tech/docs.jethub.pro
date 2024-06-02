@@ -13,7 +13,7 @@ repos:
           - --line-length=119
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.4.4
+    rev: v0.4.6
     hooks:
       - id: ruff
         args:
