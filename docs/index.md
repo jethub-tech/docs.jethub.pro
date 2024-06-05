@@ -70,7 +70,7 @@ flowchart LR
 - Установка зависимостей
 
     ```bash
-    pip install click==8.1.7 requests==2.31.0
+    pip install click==8.1.7 requests==2.32.0 ujson==5.10.0
     ```
 
 - Программа
