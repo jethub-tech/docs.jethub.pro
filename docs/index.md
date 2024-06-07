@@ -99,7 +99,7 @@ flowchart LR
     **Пример**
 
     ```bash
-    python3 jethub_client_app.py --path src/core/ --sast-python-skiptest JP0817B,JP1219C --data-leaks-exlude-path tests/test_func.py
+    python3 jethub_client_app.py --path src/core/ --sast-python-skiptest JP0817B,JP1219C --data-leaks-exlude-path design/,total_func.py,
     ```
 
 ## Пример отчёта
