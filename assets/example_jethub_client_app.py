@@ -1,4 +1,3 @@
-import json
 import shutil
 import time
 import zipfile
@@ -6,6 +5,7 @@ from pathlib import Path
 
 import click
 import requests
+import ujson
 
 
 API_PATH = "insert_api_path"
@@ -118,7 +118,7 @@ def wait_results(taskid: str) -> dict:
 
 def write_results(data: dict, out_file: str):
     with open(out_file, "w") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        ujson.dump(data, f, indent=4, ensure_ascii=False)
 
 
 @click.command(context_settings={"ignore_unknown_options": True})
