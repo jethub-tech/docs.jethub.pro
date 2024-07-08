@@ -123,14 +123,14 @@ def write_results(data: dict, out_file: str):
 
 @click.command(context_settings={"ignore_unknown_options": True})
 @click.option("--path", help="Path for transfer to sast", required=True, type=str)
-@click.option("--out_file", help="Output file name", default="jethub_report.json", type=str)
+@click.option("--output", help="Output file name", default="jethub_report.json", type=str)
 @click.option("--sast-python-skiptest", help="Skiptest for sast", type=str)
 @click.option("--sast-python-exclude-path", help="Exclude path for sast", type=str)
 @click.option("--data-leaks-exclude-path", help="Exclude path for data leaks", type=str)
 @click.option("--global-exclude-path", help="Exclude path for global", type=str)
 def main(
     path: str,
-    out_file: str,
+    output: str,
     sast_python_skiptest: str,
     sast_python_exclude_path: str,
     data_leaks_exclude_path: str,
@@ -149,7 +149,7 @@ def main(
     data = wait_results(taskid)
 
     # Write the result to a file
-    write_results(data, out_file)
+    write_results(data, output)
 
 
 if __name__ == "__main__":
